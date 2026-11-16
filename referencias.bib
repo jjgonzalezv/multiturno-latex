@@ -1,73 +1,91 @@
+% =====================================================================
+%  Referencias del artículo "Cuantificación de alucinaciones en agentes
+%  virtuales de servicio al cliente bajo entornos de interacción multiturno".
+%  Verificadas el 2026-11-16 contra arXiv y ACL Anthology.
+%  Detalle de cada verificación: notes/verificacion-referencias.md
+% =====================================================================
 
-@article{lecun2015,
-  author  = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
-  title   = {Deep learning},
-  journal = {Nature},
-  volume  = {521},
-  number  = {7553},
-  pages   = {436--444},
-  year    = {2015},
-  doi     = {10.1038/nature14539}
+% ---------------------------------------------------------------------
+% NOTA sobre la referencia 8 del .docx (NO INCLUIDA, pendiente de decisión):
+%   "Microsoft Research (2024). Faithfulness in Long-context and
+%    Multi-turn Conversations." con URL https://arxiv.org/pdf/2505.06120.
+%   No se encontró ningún trabajo con ese título. La URL apunta a
+%   arXiv:2505.06120, que es el artículo de Laban et al. (laban2025).
+%   El texto no la cita. Se excluye hasta contar con una fuente verificable.
+% ---------------------------------------------------------------------
+
+% Corregido: el texto citaba 2026. El arXiv se envió el 9 de mayo de 2025.
+@misc{laban2025,
+  author       = {Laban, Philippe and Hayashi, Hiroaki and Zhou, Yingbo and Neville, Jennifer},
+  title        = {{LLMs} get lost in multi-turn conversation},
+  year         = {2025},
+  howpublished = {arXiv preprint arXiv:2505.06120},
+  url          = {https://arxiv.org/abs/2505.06120}
 }
 
-@article{schmidhuber2015,
-  author  = {Schmidhuber, J{\"u}rgen},
-  title   = {Deep learning in neural networks: An overview},
-  journal = {Neural Networks},
-  volume  = {61},
-  pages   = {85--117},
-  year    = {2015},
-  doi     = {10.1016/j.neunet.2014.09.003}
+% Corregido: el primer autor es Kevin H. Guo (el .docx decía "X. Guo").
+% Título: se usa el de la última versión (v3, mayo 2026): "...Degrade LLM Reliability".
+% El .docx citaba la v1 ("...Degrade LLM Diagnostic Reasoning"). Decisión en notes/decisiones.md.
+@misc{guo2026,
+  author       = {Guo, Kevin H. and Yan, Chao and Baidya, Avinash and Brown, Katherine and Gao, Xiang and Xiong, Juming and Yin, Zhijun and Malin, Bradley A.},
+  title        = {Stop listening to me! {H}ow multi-turn conversations can degrade {LLM} reliability},
+  year         = {2026},
+  howpublished = {arXiv preprint arXiv:2603.11394},
+  url          = {https://arxiv.org/abs/2603.11394}
 }
 
-@article{hochreiter1997,
-  author  = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
-  title   = {Long short-term memory},
-  journal = {Neural Computation},
-  volume  = {9},
-  number  = {8},
-  pages   = {1735--1780},
-  year    = {1997},
-  doi     = {10.1162/neco.1997.9.8.1735}
+% Verificado. Revisar en la versión de COLM 2026 la página o el DOI.
+@misc{huang2026,
+  author       = {Huang, Jenny Y. and Choshen, Leshem and Sun, Wei and Khattab, Omar and Fernandez Astudillo, Ram{\'o}n and Damani, Mehul and Broderick, Tamara and Andreas, Jacob},
+  title        = {Do {LLMs} benefit from their own words?},
+  year         = {2026},
+  howpublished = {arXiv preprint arXiv:2602.24287},
+  note         = {Aceptado en Conference on Language Modeling (COLM), 2026. Lista oficial de aceptados de COLM 2026; sin páginas publicadas.},
+  url          = {https://arxiv.org/abs/2602.24287}
 }
 
-@inproceedings{he2016,
-  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
-  title     = {Deep residual learning for image recognition},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pages     = {770--778},
-  publisher = {IEEE},
-  year      = {2016},
-  doi       = {10.1109/CVPR.2016.90}
+% Verificado. Es un artículo de taller, no de conferencia principal.
+@misc{sinha2026,
+  author       = {Sinha, Aditya and Steck, Harald and Ostuni, Vito and Rinaldi, Matteo},
+  title        = {Beyond continuity: Challenges of context switching in multi-turn dialogue with {LLMs}},
+  year         = {2026},
+  howpublished = {arXiv preprint arXiv:2605.09268},
+  note         = {Aceptado en el taller ICBINB @ ICLR 2026},
+  url          = {https://arxiv.org/abs/2605.09268}
 }
 
-@article{hevner2004,
-  author  = {Hevner, Alan R. and March, Salvatore T. and Park, Jinsoo and Ram, Sudha},
-  title   = {Design science in information systems research},
-  journal = {MIS Quarterly},
-  volume  = {28},
-  number  = {1},
-  pages   = {75--105},
-  year    = {2004},
-  doi     = {10.2307/25148625}
+% Corregido: la inicial es "V." (Victoria Graf), no "A.".
+@misc{graf2026,
+  author       = {Graf, Victoria and Pyatkin, Valentina and Dziri, Nouha and Lambert, Nathan and Hajishirzi, Hannaneh},
+  title        = {{TurnWise}: The gap between single- and multi-turn language model capabilities},
+  year         = {2026},
+  howpublished = {arXiv preprint arXiv:2603.16759},
+  url          = {https://arxiv.org/abs/2603.16759}
 }
 
-@incollection{easterbrook2008,
-  author    = {Easterbrook, Steve and Singer, Janice and Storey, Margaret-Anne and Damian, Daniela},
-  title     = {Selecting empirical methods for software engineering research},
-  editor    = {Shull, Forrest and Singer, Janice and Sj{\o}berg, Dag I. K.},
-  booktitle = {Guide to advanced empirical software engineering},
-  pages     = {285--311},
-  publisher = {Springer},
-  year      = {2008},
-  doi       = {10.1007/978-1-84800-044-5_11}
+% Corregido: el primer autor es Sahana Ramnath (el .docx decía "R. Joshi";
+% Brihi Joshi es el tercer autor). Es un artículo de EMNLP 2025, no solo un
+% preprint; la versión preprint es arXiv:2505.20451.
+% Verificado en el resumen: "humans frequently (60 to 70 percent of the time)
+% change their intents from one turn of the conversation to the next".
+@inproceedings{ramnath2025,
+  author    = {Ramnath, Sahana and Mudgil, Anurag and Joshi, Brihi and Hallinan, Skyler and Ren, Xiang},
+  title     = {{Amulet}: Putting complex multi-turn conversations on the stand with {LLM} juries},
+  booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  pages     = {25594--25635},
+  publisher = {Association for Computational Linguistics},
+  year      = {2025},
+  doi       = {10.18653/v1/2025.emnlp-main.1300},
+  url       = {https://aclanthology.org/2025.emnlp-main.1300/}
 }
 
-@book{wohlin2024,
-  author    = {Wohlin, Claes and Runeson, Per and H{\"o}st, Martin and Ohlsson, Magnus C. and Regnell, Bj{\"o}rn and Wessl{\'e}n, Anders},
-  title     = {Experimentation in software engineering},
-  edition   = {2},
-  publisher = {Springer},
-  year      = {2024},
-  doi       = {10.1007/978-3-662-69306-3}
+% Corregida la inicial: Jing Huang (el .docx decía "X. Huang"). Este Huang no es el de huang2026.
+% Verificado en el texto completo: los métodos online (dinámicos) logran una
+% tasa de éxito donde los métodos estáticos encuentran pocos o ningún fallo.
+@misc{huang2025,
+  author       = {Huang, Jing and Zhang, Shujian and Wang, Lun and Hard, Andrew and Mathews, Rajiv and Lambert, John},
+  title        = {Eliciting behaviors in multi-turn conversations},
+  year         = {2025},
+  howpublished = {arXiv preprint arXiv:2512.23701},
+  url          = {https://arxiv.org/abs/2512.23701}
 }
