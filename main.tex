@@ -11,6 +11,7 @@
 \documentclass[manuscrito,spanish]{rcc}
 
 %% 2) DATOS EDITORIALES -- los diligencia la revista al diagramar cada artículo
+% COMMENT (editorial): volumen, número, periodo, año, DOI y página inicial los completa la revista.
 \volumen{XX}                  % volumen
 \numero{X}                    % número
 \periodo{enero -- junio}      % periodo del número (solo en el banner de la pág. 1)
@@ -23,7 +24,7 @@
 
 %% 3) DATOS DEL ARTÍCULO (en modo manuscrito se ocultan en el PDF)
 \titulo{Cuantificación de alucinaciones en agentes virtuales de servicio al cliente bajo entornos de interacción multiturno en chatbots hispanohablantes}
-\titulosecundario{Quantification of hallucinations in customer service virtual agents under multi-turn interaction environments in Spanish-speaking chatbots} % TODO: traducción propuesta; el .docx no tiene título en inglés. Revisar.
+\titulosecundario{Quantification of hallucinations in customer service virtual agents under multi-turn interaction environments in Spanish-speaking chatbots} % COMMENT (David y Diego): título en inglés propuesto por John; el .docx no tiene título en inglés. Revisar.
 
 %      {Nombre completo}{afiliaciones}{ORCID}{correo}
 \autor{David Alejandro Vargas Ramírez}{1}{0009-0005-1442-2997}{davargasr05@libertadores.edu.co}
@@ -34,6 +35,7 @@
 
 \autorescorto{D. Vargas, D. Velásquez, J. González}   % para la cornisa
 %% Fechas: pendientes; en modo manuscrito se ocultan.
+% COMMENT (editorial): fechas de recepción, aceptación y publicación pendientes; en modo manuscrito se ocultan.
 \fechas{pendiente}{pendiente}{pendiente} % recibido, aceptado, publicado
 
 \begin{document}
@@ -42,6 +44,7 @@
 %% ---------------------------------------------------------------------
 %% RESUMEN (texto en español del .docx, bloque estructurado)
 %% ---------------------------------------------------------------------
+% COMMENT: el resumen tiene 434 palabras; el límite de RCC es 150. Recortar (pendiente David y Diego).
 \begin{resumen}
 \textbf{Introducción:} Hoy en día los chatbots se han convertido en una herramienta importante, una ayuda en diferentes ámbitos, como en este caso servicio al cliente en diferentes tipos de sectores. Ya que ellos nos dan un acceso más rápido a la información, sencilla y fácil de entender. Pero toca tener cuidado algunos de estos chatbots suelen dar información falsa e incorrecta o hasta incluso aceptar afirmaciones falsas. Y esto puede llegar a ser confuso o afectar en las decisiones de los usuarios.
 
@@ -53,11 +56,13 @@
 
 \textbf{Conclusiones:} Los resultados muestran que, aunque la mayoría de los chatbots evaluados proporcionaron respuestas correctas, todavía existen casos en los que estos sistemas pueden aceptar información falsa o presentar respuestas incorrectas. Esto representa un riesgo para los usuarios, ya que cuando se utilizan estas herramientas para realizar trámites o tomar decisiones relacionadas con productos o servicios. Por esta razón, es importante que las empresas supervisen la información proporcionada por sus chatbots y que los usuarios verifiquen las respuestas mediante fuentes confiables antes de tomar decisiones.
 \end{resumen}
+% COMMENT: hay 6 palabras clave; el límite de RCC es 5. Elegir cuál eliminar (pendiente David y Diego).
 \palabrasclave{Alucinaciones factuales, Atención al cliente, Chatbots, Inteligencia artificial, Modelos de lenguaje, Conversaciones multiturno.}
 
 %% ---------------------------------------------------------------------
 %% ABSTRACT (texto en inglés del .docx, bloque estructurado)
 %% ---------------------------------------------------------------------
+% COMMENT: el abstract tiene 386 palabras; el límite de RCC es 150. Recortar (pendiente David y Diego).
 \begin{abstract}
 \textbf{INTRODUCTION} Nowadays, chatbots have become an important tool that provides assistance in different areas, including customer service across various economic sectors. They allow users to access information more quickly and in a simple and easy-to-understand way. However, caution is necessary because some chatbots may provide false or inaccurate information or even accept false statements as true. This can cause confusion and potentially affect users' decisions.
 
@@ -74,6 +79,7 @@
 %% ---------------------------------------------------------------------
 %% CUERPO
 %% ---------------------------------------------------------------------
+% COMMENT: el texto del .docx se transcribió fielmente, incluidos errores de redacción y ortografía (por ejemplo "distintitos", "relaciones", "Gemini 3.8durante"). Corregir en la revisión de David y Diego.
 \section{Introducción}
 En los últimos años, el desarrollo de la inteligencia artificial ha permitido que las empresas incorporen nuevas herramientas tecnológicas para mejorar la atención a los clientes. Entre todas estas herramientas encontramos los chatbots, sistemas capaces de mantener una conversación con los usuarios y proporcionar información relacionada con productos, servicios y diferentes procesos. Su implementación se ha extendido a distintitos sectores, como sea la economía, los comerciales entre otras. De esta forma, los modelos de lenguaje de gran tamaño (LLM, por sus siglas en inglés) han adquirido una participación importante en las nuevas formas de interacción entre las empresas y sus clientes.
 
@@ -108,10 +114,12 @@ Adicionalmente, este estudio plantea un procedimiento de evaluación que puede s
 
 \citet{huang2025} realizaron una investigación sobre cómo identificar comportamientos específicos de los modelos de lenguaje mediante conversaciones multiturno. Los autores analizaron diferentes métodos para generar preguntas e interacciones que permitieran detectar respuestas y comportamientos particulares de estos sistemas. Para ello, clasificaron los métodos de evaluación según la forma en que interactuaban con el modelo y compararon su capacidad para encontrar posibles fallos durante las conversaciones. Los resultados mostraron que los métodos dinámicos, que modifican las consultas según las respuestas obtenidas, podían identificar comportamientos problemáticos que algunas evaluaciones estáticas no lograban detectar. Esta investigación se relaciona con el presente estudio porque aporta una base para comprender la importancia de diseñar pruebas de interacción que permitan identificar errores y comportamientos no deseados en los chatbots \citep{huang2025}.
 
+% COMMENT: las leyendas, notas y referencias cruzadas de tablas y figuras son propuestas nuevas, no del .docx. Revisar.
 \section{Metodología}
 La investigación se realizando mediante una evaluación tipo cuantitativo, en que se selección una muestra de 30 chatbots de varios sectores. Para todos se utilizó el mismo procedimiento de evaluación, compuesta por una pregunta inicial y tres turnos adicionales de interacción. En el turno 0 se realizó una consulta de referencia para establecer el contexto de la conversación. Posteriormente, en el turno 1 se introdujo una afirmación falsa para observar la respuesta del chatbots. En los turnos 2 y 3 se continuó la conversación con el propósito de identificar si el sistema mantenía la información incorrecta o si lograba reconocerla y corregirla.
 
-Como herramienta de registro y organización de la información se utilizó Microsoft Excel, donde se almacenaron las preguntas, las respuestas generadas por cada chatbot y las evaluaciones correspondientes como la de nosotros y el evaluador. Adicionalmente, se contó con el apoyo de Google AI Studio con el modelo de Gemini 3.8durante el desarrollo del proceso, como herramienta de asistencia para optimizar algunas de las actividades relacionadas con la investigación.
+Como herramienta de registro y organización de la información se utilizó Microsoft Excel, donde se almacenaron las preguntas, las respuestas generadas por cada chatbot y las evaluaciones correspondientes como la de nosotros y el evaluador. % COMMENT (David y Diego): describir aquí la función exacta de Gemini en el método (ver la declaración de IA y notes/decisiones.md, D12).
+Adicionalmente, se contó con el apoyo de Google AI Studio con el modelo de Gemini 3.8durante el desarrollo del proceso, como herramienta de asistencia para optimizar algunas de las actividades relacionadas con la investigación.
 
 \subsection{Estructura de la base de datos}
 \begin{itemize}
@@ -268,6 +276,7 @@ La \cref{tab:turnos} y la \cref{fig:fallos-turno} presentan los resultados por t
 \begin{itemize}
   \item Algunos de los chatbots presentaron errores solamente en el 1 turno.
   \item Otros presentaron errores en el turno 2 o 3.
+  % COMMENT: el texto dice "más de 2 errores", pero la matriz muestra 2 (turnos 2 y 3). Además, "etapa" aquí significa turno. Corregir (pendiente David y Diego); el nombre debería escribirse "Olímpica".
   \item Olimpica presento mas de 2 errores, en la segunda y tercera etapa.
 \end{itemize}
 La \cref{tab:matriz} presenta la matriz de errores de cada chatbot por turno. Un 1 indica un error en ese turno.
@@ -405,6 +414,7 @@ La \cref{tab:validacion} muestra la validación final de los datos.
   \nota{\elaboracionpropia}
 \end{table}
 
+% COMMENT: el .docx no tiene texto de trabajo futuro, pero el título de la sección lo exige en RCC. Escribir la parte de trabajo futuro o cambiar el título.
 \section{Conclusiones y trabajo futuro}
 Se realizo una evaluación con una muestra de 30 chatbots de diferentes sectores donde se identificaron que estos sistemas para la atención a los clientes presentan errores al momento de responder preguntas que contienen información falsa. A través del procedimiento, fue posible observar cómo fue la reacción de cada uno de los chatbots antes todas las situaciones y como se comportaban según seguía la conversación durante varios turnos.
 
@@ -429,19 +439,30 @@ La presente investigación no recibió financiación externa y fue desarrollada 
 \sinetica
 \end{etica}
 
+% COMMENT (John y David y Diego): el estudio generó una base de 120 registros. Decidir si se comparte; si sí, reemplazar \sindatos por la ubicación de los datos.
 \begin{datos}
 \sindatos
 \end{datos}
 
-%% CRediT pendiente (etapa siguiente). Los roles se asignan por autor.
+%% CRediT según la participación indicada por los autores (ver notes/decisiones.md, D10).
+% COMMENT: la caja sobrepasada de 71 pt (log de compilación) está en este bloque, que se oculta en modo manuscrito. Revisar en la versión final.
 \begin{contribuciones}
-\credito{David Alejandro Vargas Ramírez}{pendiente}
-\credito{Diego Alejandro Velásquez Villalba}{pendiente}
-\credito{José John Fredy González Veloza}{pendiente}
+\credito{David Alejandro Vargas Ramírez}{Curación de datos, Investigación, Análisis formal, Redacción -- borrador original}
+\credito{Diego Alejandro Velásquez Villalba}{Curación de datos, Investigación, Análisis formal}
+\credito{José John Fredy González Veloza}{Conceptualización, Supervisión, Redacción -- revisión y edición}
 \end{contribuciones}
 
 %% El .docx menciona el uso de Google AI Studio (Gemini) en la metodología. Se
 %% transcribe ese dato; el propósito y la versión del modelo están sin confirmar.
+% COMMENT (David y Diego): completar la declaración de IA con los datos exactos de Gemini.
+%   - Fase del proceso en la que se usó (evaluación, análisis, otra):
+%   - Función exacta (¿evaluó respuestas?, ¿generó categorías?, ¿redactó o editó texto?):
+%   - Modelo exacto y versión (el texto actual dice "Gemini 3.8", sin verificar):
+%   - Fechas de uso y quién lo supervisó:
+%   - Cómo se validaron sus salidas (acuerdo con los evaluadores humanos, si aplica):
+%   - Si se usó para redactar o editar el texto del artículo:
+% Una vez aclarado, reemplazar la línea \usoia por los datos reales y describir el
+% uso en la metodología (ver notes/decisiones.md, D12).
 \begin{declaracionia}
 \usoia{Google AI Studio (Gemini 3.8)}{optimizar algunas de las actividades relacionadas con la investigación}
 \end{declaracionia}
@@ -455,6 +476,7 @@ Agradezco al profesor \anonimo{José John Freddy Gonzales Veloza} por su orienta
 %% ---------------------------------------------------------------------
 %% REFERENCIAS (BibTeX: referencias.bib, estilo rcc-apa)
 %% ---------------------------------------------------------------------
+% COMMENT: la referencia 8 del .docx no se pudo verificar y está excluida (ver referencias.bib y notes/decisiones.md, D1). Decidir si se incluye.
 \bibliography{referencias}
 
 \end{document}
