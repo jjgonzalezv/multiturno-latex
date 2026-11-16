@@ -1,0 +1,209 @@
+%% =====================================================================
+%%  REVISTA COLOMBIANA DE COMPUTACIÓN -- Plantilla LaTeX (artículo en ESPAÑOL)
+%%  Compilar: pdfLaTeX (o XeLaTeX) -> BibTeX -> LaTeX -> LaTeX
+%% =====================================================================
+%%  1) VERSIÓN DEL DOCUMENTO: mantenga "manuscrito" para enviar el artículo
+%%     (ANÓNIMO, para revisión doble ciego). Suba un .zip con el código fuente
+%%     (.tex, .bib y figuras) y el PDF compilado.
+%% ---------------------------------------------------------------------
+\documentclass[manuscrito,spanish]{rcc}
+
+%% 2) DATOS EDITORIALES -- los diligencia la revista al diagramar cada artículo
+%%    (aparecen en el banner de la primera página y en la cornisa de las demás)
+\volumen{XX}                  % volumen
+\numero{X}                    % número
+\periodo{enero -- junio}      % periodo del número (solo en el banner de la pág. 1)
+\anio{20XX}                   % año
+\doi{10.29375/25392115.XXXX}  % DOI del artículo (hipervínculo en el banner)
+\primerapagina{1}             % PÁGINA INICIAL del artículo dentro del número.
+% \eissn{2539-2115}           % ya viene por defecto
+\licencia{\textcopyright20XX Universidad Autónoma de Bucaramanga. Este artículo es de acceso
+  abierto y se distribuye bajo los términos y condiciones de la licencia Creative Commons
+  Atribución (CC BY-NC-SA 4.0) (\url{https://creativecommons.org/licenses/by-nc-sa/4.0/})}
+
+%% 3) DATOS DEL ARTÍCULO (en modo manuscrito se ocultan en el PDF)
+\titulo{Título del artículo en Español}
+\titulosecundario{Title of the article in English}
+
+%      {Nombre completo}{afiliaciones}{ORCID}{correo}
+\autor{Andrés Jerez}{1}{0000-0002-0078-9166}{ajerez479@unab.edu.co}
+\autor{Jose Daniel Cabrera Cruz}{1}{0000-0002-1815-5057}{jcabrerc@unab.edu.co}
+
+\afiliacion{1}{Universidad Autónoma de Bucaramanga -- UNAB, Bucaramanga, Colombia.}
+
+\autorescorto{A. Jerez, J. Cabrera}               % para la cornisa
+%% Fechas: se muestran SOLO en la versión final (en manuscrito se ocultan solas).
+%% Para ocultarlas también en la final: \rccset{mostrar fechas = false}
+\fechas{DD de mes de AAAA}{DD de mes de AAAA}{DD de mes de AAAA} % recibido, aceptado, publicado
+
+\begin{document}
+\maketitle
+
+%% Límites de la revista: resumen y abstract de máx. 150 palabras; máx. 5 palabras clave.
+%% LaTeX las cuenta y avisa en el registro si se exceden (la opción "verificar" muestra los conteos).
+\begin{resumen}
+Escriba aquí el resumen del artículo (máximo 150 palabras). Debe presentar el problema, el
+objetivo, la metodología, los resultados principales y las conclusiones. El resumen se
+compone en 9 pt, con márgenes de 1 cm a cada lado.
+\end{resumen}
+\palabrasclave{Palabra uno, palabra dos, palabra tres, palabra cuatro, palabra cinco.} % máx. 5
+
+\begin{abstract}
+Write the abstract of the article here (150 words maximum). It must present the problem, the
+objective, the methodology, the main results and the conclusions.
+\end{abstract}
+\keywords{Keyword one, keyword two, keyword three, keyword four, keyword five.} % max. 5
+
+\section{Introducción}\label{sec:intro}
+Este es el primer párrafo de la sección y no lleva sangría.
+Hay dos formas de citar (APA~7): entre paréntesis, (Autor, año), con \verb|\citep| o
+\verb|\citaparentesis| \citep{lecun2015, schmidhuber2015}; y narrativa, Autor (año), con
+\verb|\citet| o \verb|\citanarrativa|: \citanarrativa{schmidhuber2015}. Con dos autores, en español
+se usa ``y'' en los dos casos, nunca ``\&'': \citep{hochreiter1997} y \citet{hochreiter1997};
+con tres o más autores se usa ``et al.'': \citet{hevner2004}.
+
+A partir del segundo párrafo la primera línea lleva una sangría de 0,53~cm. Las
+referencias cruzadas se escriben con \verb|\cref|: véanse la \cref{fig:ejemplo}, la
+\cref{tab:ejemplo} y la ecuación~\eqref{eq:mse}. Un trabajo propio puede citarse así:
+\verb|\anonimo{\citep{jerez,cabrera}}|, que en modo manuscrito se reemplaza por ``[anonimizado]''.
+
+\section{Metodología}\label{sec:metodo}
+Las figuras se insertan con \verb|\includegraphics| (PDF, PNG o JPG; se recomienda PDF
+vectorial). La leyenda va debajo de la figura y la nota con su autoría o fuente justo después
+de la leyenda, como se ve en la \cref{fig:ejemplo}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuras/figura-ejemplo-es.pdf}
+  \caption{Ejemplo de figura: etapas generales del proceso propuesto}\label{fig:ejemplo}
+  \nota{\elaboracionpropia}   % autoría/fuente (APA 7), obligatoria en la RCC
+  % Otras opciones:  \nota{\tomadode{\citet{x}}}   (reproducida sin cambios)
+  %                  \nota{\adaptadode{\citet{x}}} (modificada)
+\end{figure}
+
+El error cuadrático medio se define en la ecuación~\eqref{eq:mse}:
+\begin{equation}
+  \mathrm{MSE} = \frac{1}{n}\sum_{i=1}^{n}\left(y_i-\hat{y}_i\right)^2 \label{eq:mse}
+\end{equation}
+
+\subsection{Datos}
+Las tablas usan el entorno \verb|rcctabla|, que aplica el tamaño de 8~pt, la cabecera azul
+con texto blanco y las líneas horizontales azul claro de la plantilla. La leyenda va encima de
+la tabla y la nota debajo (\cref{tab:ejemplo}).
+
+\begin{table}[H]
+  \caption{Ejemplo de tabla: desempeño de los métodos evaluados}\label{tab:ejemplo}
+  \begin{rcctabla}
+  \begin{tabularx}{\textwidth}{>{\bfseries\rccfs{9}}CCCCC}
+    \rccencabezado \rcch{Método} & \rcch{Exactitud} & \rcch{Precisión} & \rcch{Sensibilidad} & \rcch{Puntaje F1} \\
+    Método A & 0,85 & 0,83 & 0,81 & 0,82 \\ \hline
+    Método B & 0,88 & 0,86 & 0,87 & 0,86 \\ \hline
+    Método C & 0,91 & 0,90 & 0,89 & 0,89 \\ \hline
+  \end{tabularx}
+  \end{rcctabla}
+  \nota{Los valores son promedios de cinco ejecuciones. \elaboracionpropia}
+  % Otras opciones:  \nota{\tomadode{\citet{x}}}             (reproducida sin cambios)
+  %                  \nota{\adaptadode{\citet{x}}}           (modificada)
+  %                  \nota{\elaboracionpropiacon{\citet{x}}} (propia con datos de terceros)
+\end{table}
+
+%% TABLAS LARGAS que continúan en la página siguiente (la fila azul de
+%% encabezado se repite en cada página). NO van dentro de \begin{table}. Columnas: P{fracción} (izquierda)
+%% o Q{fracción} (centro) del ancho del texto; las fracciones deben sumar 1.
+% \begin{rcctablalarga}{Leyenda de la tabla larga}{tab:larga}{P{.2}P{.3}P{.25}P{.25}}
+%   {\rcch{Columna 1} & \rcch{Columna 2} & \rcch{Columna 3} & \rcch{Columna 4}}
+%   Fila 1 & texto & texto & texto \\ \hline
+%   Fila 2 & texto & texto & texto \\ \hline
+% \end{rcctablalarga}
+% \nota{\elaboracionpropia}
+
+\subsubsection{Listas}
+Las listas con viñetas y numeradas tienen este formato: la viñeta va a
+0,63~cm del margen y el texto, incluidas sus líneas siguientes, a 1,27~cm (sangría francesa),
+justificado y sin espacio adicional antes ni después:
+\begin{itemize}
+  \item Primer elemento de la lista. Si el texto ocupa más de una línea, las líneas
+        siguientes se alinean con el texto y no con la viñeta.
+  \item Segundo elemento de la lista.
+  \begin{itemize}
+    \item Elemento de segundo nivel.
+  \end{itemize}
+  \item Tercer elemento de la lista.
+\end{itemize}
+Las listas numeradas funcionan igual:
+\begin{enumerate}
+  \item Primer elemento.
+  \item Segundo elemento.
+  \item Tercer elemento.
+\end{enumerate}
+
+\section{Resultados}
+Texto de los resultados. Las ponencias, los capítulos de libro y los libros se citan igual
+\citep{easterbrook2008, he2016, wohlin2024}.
+
+\section{Conclusiones y trabajo futuro}
+Texto de las conclusiones.
+
+%% ----- DECLARACIONES (antes de ORCID y Referencias) ---------------------
+%% Si una declaración no aplica, deje el título y use el texto estándar
+%% (\sinconflicto, \sinfinanciamiento, \sinetica, \sindatos, \sinusoia).
+%% En modo MANUSCRITO se ocultan automáticamente: financiamiento,
+%% contribuciones y agradecimientos. Las demás se muestran a los revisores:
+%% envuelva en \anonimo{...} cualquier nombre que identifique a los autores.
+
+\begin{conflicto}
+\sinconflicto
+\end{conflicto}
+
+\begin{financiamiento}    % entidad financiadora, programa y número de proyecto
+Este trabajo fue financiado por la Universidad Autónoma de Bucaramanga -- UNAB, convocatoria
+interna 2025, proyecto n.º~XXXX. La entidad financiadora no participó en el diseño del estudio, la
+recolección y el análisis de los datos, la decisión de publicar ni la redacción del manuscrito.
+% \sinfinanciamiento
+\end{financiamiento}
+
+\begin{etica}             % comité de ética, código y fecha; consentimiento informado
+\sinetica
+% El estudio fue aprobado por el Comité de Ética de \anonimo{la Universidad Autónoma de
+% Bucaramanga -- UNAB} (código XXXX, 12 de mayo de 2025). Se obtuvo el consentimiento
+% informado de todos los participantes.
+\end{etica}
+
+\begin{datos}             % dónde y cómo acceder a los datos y al código
+Los datos que respaldan los resultados están disponibles en
+\anonimo{\url{https://revistas.unab.edu.co/index.php/rcc}}.
+% \sindatos
+\end{datos}
+
+%% CRediT: indique para cada autor uno o varios de los 14 roles. Definiciones:
+%%   https://credit.niso.org/contributor-roles-defined/
+%% Roles:
+%   Conceptualización, Curación de datos, Análisis formal, Adquisición de fondos,
+%   Investigación, Metodología, Administración del proyecto, Recursos, Software,
+%   Supervisión, Validación, Visualización, Redacción -- borrador original,
+%   Redacción -- revisión y edición
+%% Todos los autores van en un mismo párrafo, con el nombre en negrita. El PDF incluye
+%% una frase con el enlace a CRediT (\rccset{frase credit = false} la quita).
+\begin{contribuciones}
+\credito{Andrés Jerez}{Conceptualización, Metodología, Software, Redacción -- borrador original}
+\credito{Jose Daniel Cabrera Cruz}{Análisis formal, Validación, Redacción -- revisión y edición}
+\end{contribuciones}
+
+\begin{declaracionia}     % herramienta, propósito y grado de supervisión
+\sinusoia
+% \usoia{ChatGPT (OpenAI, GPT-4o)}{mejorar la redacción del manuscrito}
+\end{declaracionia}
+
+\begin{agradecimientos}  % se oculta en modo manuscrito
+Los autores agradecen a la Universidad Autónoma de Bucaramanga -- UNAB por el apoyo brindado
+para el desarrollo de este trabajo, en particular a la Facultad de Ingeniería y a su grupo de
+investigación, por facilitar los espacios y recursos necesarios. También agradecen a los
+evaluadores anónimos por sus comentarios y sugerencias, que contribuyeron a mejorar la calidad
+de este artículo.
+\end{agradecimientos}
+
+\rccorcid                 % lista ORCID automática (se oculta en modo manuscrito)
+
+\bibliography{referencias}
+
+\end{document}
