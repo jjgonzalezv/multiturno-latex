@@ -15,6 +15,7 @@
 \usepackage[review,commentmarkup=inline,authormarkup=none]{texchanges}
 
 \txdefineauthor[name={John},color=blue]{john}
+\txdefineauthor[name={Peter},color=red]{peter}
 
 %% 2) DATOS EDITORIALES -- los diligencia la revista al diagramar cada artículo
 \volumen{XX}                  % volumen
@@ -46,6 +47,7 @@ Este artículo es de acceso
 \begin{document}
 \maketitle
 \txcomment[author=john,id=J01,status=pending]{título en inglés propuesto; el .docx no tiene título en inglés. Revisar.}
+\txcomment[author=peter,id=R201,status=pending]{MENOR: Título. "Cuantificación de alucinaciones en agentes virtuales de servicio al cliente bajo entornos de interacción multiturno en chatbots hispanohablantes" tiene 18 palabras, no indica el tipo de estudio y usa dos términos para el mismo objeto ("agentes virtuales" y "chatbots"). "hispanohablantes" no se sustenta: el texto no dice en qué idioma se interactuó ni si AWS, HP o AT y T se evaluaron en español. Reformular, por ejemplo: Alucinaciones factuales ante premisas falsas en chatbots de servicio al cliente: evaluación descriptiva multiturno de 30 chatbots. No encontré un límite de palabras del título en las reglas de la revista.}
 
 %% ---------------------------------------------------------------------
 %% RESUMEN (texto en español del .docx, bloque estructurado)
@@ -86,6 +88,7 @@ Por esta razón, es importante que las empresas supervisen la información propo
 \txcomment[author=john,id=J15,status=pending]{Esto es válido, pero de acuerdo al estudio, cuales son las estrategias que deberían asumir las empresas?}
 \end{resumen}
 \txcomment[author=john,id=J16,status=pending]{hay 6 palabras clave; el límite es 5.}
+\txcomment[author=peter,id=R203,status=pending]{MENOR: Resumen, Resultados. Complementa J12. Introduce la "evaluación de control" sin definirla y omite el resultado de la prueba de McNemar (diferencias no significativas), que es la conclusión estadística del cuerpo. "11 con fallos en los tres turnos analizados" es ambiguo: son 11 respuestas, no 11 chatbots. Los decimales mezclan coma y punto ("10.00" frente a "16,67"). Reportar cifras con un solo formato y añadir el resultado de McNemar.}
 \palabrasclave{Alucinaciones factuales, Atención al cliente, Chatbots, Inteligencia artificial, Modelos de lenguaje, Conversaciones multiturno.}
 
 %% ---------------------------------------------------------------------
@@ -136,12 +139,14 @@ Este comportamiento lo llamamos alucinación de inteligencia artificial y repres
 Cuando un usuario recibe información falsa o errónea de un producto, ya sea una tarifa o una política empresarial, puede tener dificultades al tomar una decisión adecuada.
 Incluso el hecho de que estas respuestas se presenten de manera normal, clara y convincente puede llegar a ser difícil para los usuarios identificarlos.
 \txcomment[author=john,id=J20,status=pending]{Aquí falta un referencia que soporte lo anterior.}
+\txcomment[author=peter,id=R210,status=pending]{MENOR: Introducción, párrafo 2. Errores de concordancia y redacción: "problemas relaciones con la precisión", "puede llegar a ser difícil para los usuarios identificarlos", "de manera normal". Usar "lo llamamos" (primera persona) no es coherente con el resto del artículo. Reescribir en voz impersonal o con "los autores".}
 
 Esta problemática se presenta mayormente cuando las consultas se desarrollan mediante conversaciones multiturno, es decir, interacciones en las que el usuario y el chatbot hablan e intercambian mensajes dentro de una misma conversación.
 A diferencia de otros chatbots que en las conversaciones son a través de opciones múltiples, ya las respuestas son determinadas, no hay ninguna interacción.
 Entonces este tipo de interacciones multiturno pueden general dificultades para los modelos de lenguaje, debido a que deben conservar información relevante y responder de manera coherente a medida que avanza los diálogos.
 Investigadores recientes señalan que el rendimiento de estos sistemas puede verse afectados durante las conversaciones prolongadas y que pueden presentar en mantener la precisión de las respuestas.
 \citep{guo2026,laban2025,sinha2026}.
+\txcomment[author=peter,id=R211,status=pending]{MENOR: Introducción, párrafo 3. "A diferencia de otros chatbots que en las conversaciones son a través de opciones múltiples, ya las respuestas son determinadas, no hay ninguna interacción" es confusa. Además "pueden general dificultades", "a medida que avanza los diálogos" y "pueden presentar en mantener la precisión" son incorrectas o incompletas. La cita queda en una línea aparte, después del punto. Afirmar que la problemática "se presenta mayormente" en conversaciones multiturno requiere fuente. Reescribir el párrafo y colocar la cita antes del punto.}
 
 Una situación de interés ocurre cuando un usuario introduce una afirmación falsa dentro de la conversación.
 \txcomment[author=john,id=J21,status=pending]{Como lo dije anteriormente, debemos describir porque este error es el que mas preocupa frente a una gran cantidad de problemas que sufren estos sistemas. Por favor soportar con referencias bilbiográficas}
@@ -151,12 +156,14 @@ Asimismo, los errores permanecen en el contexto de la conversación e influir en
 Por esta razón es importante evaluar no solamente si la información es correcta de la consulta inicial, sino también ver como responde cuando se le introducen premisas falsas y se continua la interacción.
 \txcomment[author=john,id=J22,status=pending]{Siento que esta última frase sobra o no está bien integrada, es que no se entiende a que se refiere con "consulta inicial"}
 \txcomment[author=john,id=J23,status=pending]{Realizar una figura comparativa entre un asistente que responde bien a la primer consulta frente al caso 2 donde el agente responde mal la misma consulta pero en una conversación multi-turno, usen un ejemplo de los que tienen evaluados, porque es importante hacerlo aquí mismo? Porque el lector entenderá rápidamente en que consiste el problema que estamos enfrentando.}
+\txcomment[author=peter,id=R212,status=pending]{MENOR: Introducción, párrafo 4. El fenómeno descrito ("la tendencia que tienen algunos modelos a estar de acuerdo con las sugerencias del usuario") tiene nombre en la literatura (complacencia o sycophancy). Nombrarlo y citar una fuente específica. Corregir "contra dicientes", "los errores permanecen en el contexto de la conversación e influir" y "se continua".}
 
 A partir de esta problemática, la presente investigación busca responder la siguiente pregunta: ¿cuál es la incidencia de las alucinaciones factuales en las respuestas de los chatbots de servicio al cliente ante interacciones multiturno en las que se introducen premisas falsas? El objetivo principal es cuantificar las alucinaciones factuales en una muestra de 30 chatbots pertenecientes a varios sectores, mediante un procedimiento de evaluación.
 \txcomment[author=john,id=J24,status=pending]{Hasta aquí siento que no se le está dando el verdadero valor al trabajo: salir a campo y medirlo en chatbots conversacionales reales, por lo general los demás estudios se quedan en benchmarks sintéticos o con datos de una o pocas empresas. Además, es muy escaso en chatbots en lenguaje español.}
 Para ello, se realizó una consulta inicial de referencia, identificada como turno 0, seguida de tres turnos adicionales en los que se desarrolló la interacción y se introdujeron premisas falsas para observar el comportamiento de los chatbots.
 \txcomment[author=john,id=J25,status=pending]{cambiar "turno 0" por "consulta control". Explicar brevemente que es independiente y cual es su importancia en la metodología}
 De esta manera, se buscó identificar si los chatbots proporcionaban información incorrecta, aceptaban premisas falsas o mantenían dichos errores a medida que avanzaba la conversación.
+\txcomment[author=peter,id=R213,status=pending]{MAYOR: Introducción, párrafo 5. Complementa J06 y J07. La pregunta y el objetivo aparecen a mitad de la introducción y los siguientes párrafos siguen con resultados y usos. El objetivo debe ir al final. Además mezcla métodos en pasado ("se realizó una consulta inicial de referencia") con el objetivo, y habla de "alucinaciones factuales" cuando la variable medida en los turnos es "fallo". Reordenar: contexto, vacío, pregunta y objetivo al final, y alinear el término con la variable de resultado.}
 
 Los resultados de esta evaluación permiten describir el comportamiento de los chatbots analizados e identificar la frecuencia de respuestas correctas e incorrectas durante las interacciones realizadas.
 Asimismo, ofrecen información sobre la importancia de evaluar la confiabilidad de estos sistemas en contextos empresariales, donde las respuestas automatizadas pueden influir en la experiencia y en las decisiones de los usuarios.
@@ -215,11 +222,14 @@ Los autores analizaron diferentes métodos para generar preguntas e interaccione
 Para ello, clasificaron los métodos de evaluación según la forma en que interactuaban con el modelo y compararon su capacidad para encontrar posibles fallos durante las conversaciones.
 Los resultados mostraron que los métodos dinámicos, que modifican las consultas según las respuestas obtenidas, podían identificar comportamientos problemáticos que algunas evaluaciones estáticas no lograban detectar.
 Esta investigación se relaciona con el presente estudio porque aporta una base para comprender la importancia de diseñar pruebas de interacción que permitan identificar errores y comportamientos no deseados en los chatbots.
+\txcomment[author=peter,id=R216,status=pending]{MAYOR: Trabajos relacionados, cierre. Complementa J24 y J32. La sección no declara el vacío de conocimiento. Ninguno de los seis estudios trata alucinaciones en chatbots comerciales de servicio al cliente ni en español, que es lo que el artículo evalúa. Las siete referencias son todas preprints o ponencias recientes y ninguna define alucinación. Añadir un párrafo final que indique qué no se ha estudiado y por qué este trabajo lo aborda.}
 
 \section{Metodología}
 La investigación se realizando mediante una evaluación tipo cuantitativo, en que se selecciona una muestra de 30 chatbots de varios sectores.
 Para todos se utilizó el mismo procedimiento de evaluación, compuesta por una pregunta inicial y tres turnos adicionales de interacción.
 En el turno 0 se realizó una consulta de referencia para establecer el contexto de la conversación.
+\txcomment[author=peter,id=R217,status=pending]{MAYOR: Metodología, muestra. "se selecciona una muestra de 30 chatbots de varios sectores" no explica cómo se eligieron: criterios de inclusión y exclusión, canal de acceso, idioma de la interacción y fecha de recolección. La muestra mezcla empresas con proveedores de plataformas de chatbots, que son sujetos distintos para "servicio al cliente"; justificar o separar. Complementa J08: para sostener el valor de evaluar empresas hispanohablantes hay que declarar el idioma de cada interacción. Si no se puede, quitar "hispanohablantes" del título.}
+\txcomment[author=peter,id=R218,status=pending]{MENOR: Redacción general. Pasar un corrector antes de la entrega: hay errores repetidos en todo el texto, por ejemplo "La investigación se realizando", "distintitos", "Se realizo", "Se busco", "Olimpica presento mas de 2 errores" y "se continua". Mantener el pasado en Metodología y la voz impersonal (aparecen "lo llamamos" y "nosotros").}
 
 \txcomment[author=john,id=J33,status=pending]{"turno 0" por "consulta control"}
 Posteriormente, en el turno 1 se introdujo una afirmación falsa para observar la respuesta del chatbots.
@@ -229,6 +239,8 @@ En los turnos 2 y 3 se continuó la conversación con el propósito de identific
 Como herramienta de registro y organización de la información se utilizó Microsoft Excel, donde se almacenaron las preguntas, las respuestas generadas por cada chatbot y las evaluaciones correspondientes como la de nosotros y el evaluador.
 Adicionalmente, se contó con el apoyo de Google AI Studio con el modelo de Gemini 3.8 durante el desarrollo del proceso, como herramienta de asistencia para optimizar algunas de las actividades relacionadas con la investigación.
 \txcomment[author=john,id=J36,status=pending]{describir aquí la función exacta de Gemini en el método para generar las consultas, la simulación de intereacción humano chatbot y como sirvió como LLM as a Judge, anexen los prompts utilizados en los anexos y referencielos aquí. También mencionen la validación humana hacia el LLM as a Judge. Quiten la mención a Excel, es irrelevante. Decir "Gemini es utilizó como herramienta para optimizar ..." es ambiguo y poco útil para futuros investigadores, piensen en aquellas personas (incluso uds mismos) cuando quieran replicar este estudio, debemos brindar la especificación necesaria para que lo puedan hacer!!}
+\txcomment[author=peter,id=R219,status=pending]{MAYOR: Metodología y limitaciones. Complementa J34: el diseño compara la consulta control con la conversación de tres turnos con premisa falsa, pero no incluye la misma premisa falsa en un solo turno. Por eso no se puede atribuir el fallo al formato multiturno (la pregunta que plantea J66). Declararlo como limitación en la Discusión que pide J63.}
+\txcomment[author=peter,id=R220,status=pending]{MAYOR: Metodología, variable de resultado. Complementa J36 y J65. No se define qué es un fallo: el texto alterna "alucinación", "fallo" y "error". Definir el criterio (incluido cómo se tratan las abstenciones, ver J49), la fuente contra la que se verificó cada respuesta, cuántos evaluadores humanos hubo y el acuerdo entre ellos. "las evaluaciones correspondientes como la de nosotros y el evaluador" no identifica al evaluador.}
 
 \subsection{Estructura de la base de datos}
 \txcomment[author=john,id=J37,status=pending]{Se convirtió todas las figuras a listas, tablas e imágenes de alta resolución e manera automática. Es una mala práctica copiar y pegar capturas de pantalla de códigos. En seguida hago comentarios sobre ellas, que aparezcan aquí no quiere decir que esté bien hacerlo. Por favor revisar que hubieran quedado bien transcritas.}
@@ -256,6 +268,7 @@ Las variables se listan en la \cref{tab:estructura}.
   \end{rcctabla}
   \nota{\elaboracionpropia}
 \end{table}
+\txcomment[author=peter,id=R223,status=pending]{MENOR: Metodología, análisis estadístico. Complementa J55 y J59. Al describir la prueba, indicar el método del "Valor p ajustado" (por ejemplo Bonferroni o Holm), el nivel alfa y que las 90 respuestas son tres por chatbot, es decir, no independientes. Reportar además cuántos chatbots tuvieron al menos un fallo (10 de 30).}
 
 \section{Resultados}
 \txcomment[author=john,id=J40,status=pending]{Toda la sección de resultados debe ser resumida, hay mucha información redundante y poca robustez estadística.}
@@ -323,6 +336,7 @@ La \cref{tab:sectores} presenta la distribución completa.
   \item Los 30 restantes correspondían a la pregunta de control en la que nos basábamos para poder evaluar al chatbot, por eso no se tienen en cuenta
 \txcomment[author=john,id=J47,status=pending]{Esto de que la pregunta control se usaba para comparar debe ir en la metodlogía, no aquí}
 \end{itemize}
+\txcomment[author=peter,id=R226,status=pending]{MENOR: Resultados, respuestas evaluadas. "en la que nos basábamos para poder evaluar al chatbot" confirma que el control es la referencia (ver comentario sobre la evaluación de control) y usa primera persona. Las viñetas no llevan punto final y la primera tiene "fueron la de los 3 turnos". Reescribir en voz impersonal.}
 La \cref{tab:respuestas} resume las respuestas evaluadas por turno.
 
 \begin{table}[H]
@@ -373,6 +387,7 @@ Los indicadores generales se muestran en la \cref{tab:descriptiva}.
   \item En el 2 turno se presentaron 3 fallos, que equivale a un 10.00 \%
   \item En el 3 turno se presentaron 3 fallos, que equivale a un 10.00 \%
 \end{itemize}
+\txcomment[author=peter,id=R228,status=pending]{MENOR: Resultados, formato. Se escribe "1 turno" y "turno 1", y los decimales aparecen como "16.67" y "16,67". Estandarizar a "turno 1" y coma decimal en el texto, el resumen y las tablas.}
 La \cref{tab:turnos} y la \cref{fig:fallos-turno} presentan los resultados por turno.
 
 \txcomment[author=john,id=J54,status=pending]{Esta tabla y figura sobran, ya se dijo antes}
@@ -399,6 +414,7 @@ La \cref{tab:turnos} y la \cref{fig:fallos-turno} presentan los resultados por t
 \txcomment[author=john,id=J55,status=pending]{Esto me parece clave, pero hay un problema, deben crear un intervalo de confianza sobre cada estimaciń puntual o preferiblemente hacer una prueba estadística robusta de cmparación de medias (revisen si ANOVA, t-test, t-test pareado, etc). La elección del método correcto debe estar soportado en la sección de metodología. Estos hallazgos son exploratorios y uds lo muestran como algo concluyente, ojo aquí!}
 Este resultado es interesante porque permite observar que los errores no aumentaron a medida que avanzaba la conversación.
 Por el contrario, disminuyeron del primer al segundo turno y permanecieron iguales en el tercero.
+\txcomment[author=peter,id=R229,status=pending]{SUGERENCIA: Resultados, por turno. Complementa J53: al reportar la caída (17\%, 10\%, 10\%), añadir en la misma frase que la prueba de McNemar no fue significativa (Tabla 8), para que "disminuyeron" no se lea como un efecto comprobado. La interpretación más extensa puede ir en la Discusión que pide J63.}
 
 \subsection{Chatbots que presentaron errores durante la interacción multiturno}
 \txcomment[author=john,id=J56,status=pending]{IMPORTANTE: Aquí nos podemos estar metidiendo en un problema muy grave con todas estas empresas, podemos nombrar los sectores pero no asignar las identificaciones de las empresas, esto es causal de demandas si alguna de ellas lee este documento, nunca contamos con su autorización para hacer lo que hicimos, tampoco leímos los terminos y condiciones del uso de sus chatbots. Agrupen estos resultados por sector, pero siempre tengan en cuenta la validez y robustex estadística de cualquier conclusión. Recuerden si la muestra es baja para un sector, no puedo asegurar nada porque el intervalo de confianza es gigante.}
@@ -469,6 +485,7 @@ La \cref{tab:mcnemar} presenta los resultados de la prueba.
   \nota{\elaboracionpropia}
 \end{table}
 Aunque el porcentaje de errores pasó del 16,67\,\% en el primer turno al 10\,\% en el segundo y tercero, la prueba de McNemar indica que esa disminución no fue estadísticamente significativa.
+\txcomment[author=peter,id=R231,status=pending]{MENOR: Resultados, McNemar. La Tabla 8 no tiene nota que explique la prueba, el ajuste de p ni el criterio de "Significativo". Con 8 pares discordantes la prueba tiene poca potencia, y un resultado no significativo no demuestra que no haya diferencia: indicarlo en la Discusión. Añadir una nota a la tabla.}
 
 \subsection{Resultados de la evaluación multiturno por sector}
 \txcomment[author=john,id=J60,status=pending]{Esto es lo que se pedía antes, tener cuidado con la robustez estadística, si solo hay 5 conversaciones en un sector, tal vez no sea sano atribuir o concluir. Piensen como presentar los ersultados de manera correcta alineada con la problemática.}
@@ -478,6 +495,7 @@ Aunque el porcentaje de errores pasó del 16,67\,\% en el primer turno al 10\,\%
   \item Tecnología: presentó cinco errores, la mayor cantidad absoluta, pero su porcentaje fue del 12,82\,\% debido a que tenía más chatbots.
   \item Bancario y telecomunicaciones: no registraron errores en las respuestas evaluadas.
 \end{itemize}
+\txcomment[author=peter,id=R232,status=pending]{SUGERENCIA: Resultados, sectores. Complementa J56 y J60. Antes de comparar sectores, verificar si los 2 fallos de Retail provienen de un solo chatbot. Si es así, decirlo, porque el 33,33\% depende de un caso.}
 La \cref{tab:sector} presenta los resultados completos por sector, y la \cref{fig:fallos-sector} muestra el porcentaje de fallos de cada uno.
 
 \begin{table}[H]
@@ -512,6 +530,7 @@ La \cref{tab:sector} presenta los resultados completos por sector, y la \cref{fi
   \item El 33,33\,\% presentó al menos una alucinación según el veredicto final.
   \item El 66,67\,\% no presentó alucinaciones en esta evaluación.
 \end{itemize}
+\txcomment[author=peter,id=R233,status=pending]{MAYOR: Resultados, evaluación de control. Complementa J47. "alucinaciones en 10 de los 30 chatbots" no dice con qué criterio se determinó. Si la consulta control es la referencia para evaluar los turnos 1 a 3, hay que explicar cómo se trataron los chatbots que ya alucinaban en el control (el 33,33\%). Indicar también si esos 10 son los mismos 10 que fallaron en algún turno (la matriz muestra 10 con al menos un fallo).}
 La \cref{tab:control} resume el veredicto final de la evaluación de control.
 
 \begin{table}[H]
@@ -565,6 +584,8 @@ Finalmente, esta investigación permite reconocer la importancia de evaluar la c
 No basta con analizar las respuestas que ofrecen ante una pregunta inicial, sino que también es necesario observar su comportamiento durante conversaciones más largas.
 De esta manera, el estudio aporta una forma de analizar los errores que pueden presentarse en estos sistemas y resalta la necesidad de continuar investigando las alucinaciones en herramientas de inteligencia artificial.
 \txcomment[author=john,id=J67,status=pending]{Este último párrafo es vacío, no aporta nada, eliminarlo.}
+\txcomment[author=peter,id=R237,status=pending]{MENOR: Conclusiones. Complementa J63 y J67. Al reescribirlas, incluir las cifras que responden la pregunta (12,22\% de respuestas con fallo y 10 de 30 chatbots con alucinación en el control) y, como el título dice "trabajo futuro", dos líneas concretas (por ejemplo ampliar la muestra o probar la misma premisa en un solo turno).}
+\txcomment[author=peter,id=R238,status=pending]{MENOR: Conclusiones, redacción. "Se realizo", "se identificaron que", "antes todas las situaciones", "como se comportaban según seguía la conversación". Corregir concordancia y ortografía.}
 
 %% ---------------------------------------------------------------------
 %% DECLARACIONES
@@ -580,10 +601,12 @@ La presente investigación no recibió financiación externa y fue desarrollada 
 \begin{etica}
 \sinetica
 \end{etica}
+\txcomment[author=peter,id=R239,status=pending]{MENOR: Declaración ética. La declaración estándar dice que no hubo participantes humanos, datos personales ni animales, lo cual es plausible, pero el estudio interactuó con 30 servicios comerciales. Indicar que se respetaron los términos de uso, que no se ingresaron datos personales reales ni se hicieron trámites reales, y si el comité de la institución consideró que no requería aprobación.}
 
 \begin{datos}
 \sindatos
 \end{datos}
+\txcomment[author=peter,id=R240,status=pending]{MAYOR: Disponibilidad de datos. La declaración estándar afirma que no se generaron ni analizaron datos nuevos, lo que contradice el estudio (120 registros propios). Publicar la base (prompts, respuestas, veredictos y sector) en un repositorio con acceso concreto. Complementa J56: reemplazar los nombres de las empresas por códigos.}
 
 %% CRediT según la participación indicada por los autores (ver notes/decisiones.md, D10).
 \txcomment[author=john,id=J69,status=pending]{la caja sobrepasada de 71 pt (log de compilación) está en este bloque, que se oculta en modo manuscrito. Revisar en la versión final.}
@@ -605,7 +628,7 @@ La presente investigación no recibió financiación externa y fue desarrollada 
 % Una vez aclarado, reemplazar la línea \usoia por los datos reales y describir el
 % uso en la metodología (ver notes/decisiones.md, D12).
 \begin{declaracionia}
-\usoia{Google AI Studio (Gemini 3.8)}{optimizar algunas de las actividades relacionadas con la investigación}
+\usoia{Google AI Studio (Gemini 3.8-flash)}{optimizar algunas de las actividades relacionadas con la investigación}
 \end{declaracionia}
 
 \begin{agradecimientos}
