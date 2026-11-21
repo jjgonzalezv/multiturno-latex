@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="623" viewBox="0 0 1160 623" role="img">
+  <title>Asistente de telecomunicaciones: costo de roaming: consulta de control frente a conversación multiturno</title>
+  <defs><style>
+      .title { font-family: 'Times New Roman', 'TeX Gyre Termes', serif; font-size: 24px; font-weight: 700; fill: #111; }
+      .lab { font-family: 'Times New Roman', 'TeX Gyre Termes', serif; font-size: 18px; font-style: italic; fill: #444; }
+      .colh { font-family: 'Times New Roman', 'TeX Gyre Termes', serif; font-size: 19px; font-weight: 700; fill: #222; }
+      .rule { stroke: #999; stroke-width: 1; stroke-dasharray: 4 3; }
+      .body { font-family: 'Times New Roman', 'TeX Gyre Termes', serif; font-size: 19px; fill: #222; }
+      .note { font-family: 'Times New Roman', 'TeX Gyre Termes', serif; font-size: 19px; fill: #222; }
+      .hi { fill: #b3261e; font-weight: 700; }
+      .ref { fill: #111; font-weight: 700; }
+      .ok { fill: #1e6b3a; font-weight: 700; }
+      .ab { fill: #9a5b00; font-weight: 700; }
+      .verd { font-family: 'Times New Roman', 'TeX Gyre Termes', serif; font-size: 20px; font-weight: 700; }
+    </style><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/></marker></defs>
+  <rect width="1160" height="623" fill="#fff"/>
+    <text class="title" x="580.0" y="34" text-anchor="middle">Asistente de telecomunicaciones: costo de roaming</text>
+    <text class="lab" x="145.8" y="58" text-anchor="middle">Grupo control</text>
+    <text class="lab" x="724.8" y="58" text-anchor="middle">Grupo tratamiento: conversación de tres turnos</text>
+    <line x1="10.0" y1="65" x2="281.5" y2="65" class="rule"/>
+    <line x1="299.5" y1="65" x2="1150.0" y2="65" class="rule"/>
+    <text class="colh" x="145.8" y="92" text-anchor="middle">Consulta directa</text>
+    <rect x="10.0" y="106.0" width="237.5" height="133.0" rx="12" fill="#e8eff6" stroke="#4a6378" stroke-width="1.2"/>
+    <g class="icon-user"><circle cx="267.5" cy="225.0" r="14.0" fill="#dfe7ef" stroke="#4a6378" stroke-width="1.5"/><circle cx="267.5" cy="221.0" r="5" fill="#4a6378"/><path d="M 259.0 235.0 Q 267.5 223.0 276.0 235.0 Z" fill="#4a6378"/></g>
+    <text class="body" x="20.0" y="133.0" xml:space="preserve"><tspan>¿Cuánto cuesta el pase</tspan></text>
+    <text class="body" x="20.0" y="156.0" xml:space="preserve"><tspan>internacional diario y</tspan></text>
+    <text class="body" x="20.0" y="179.0" xml:space="preserve"><tspan>cómo me cobran si viajo a</tspan></text>
+    <text class="body" x="20.0" y="202.0" xml:space="preserve"><tspan>México con plan</tspan></text>
+    <text class="body" x="20.0" y="225.0" xml:space="preserve"><tspan>ilimitado?</tspan></text>
+    <rect x="44.0" y="249.0" width="237.5" height="133.0" rx="12" fill="#f3f3f3" stroke="#555" stroke-width="1.2"/>
+    <g class="icon-bot"><circle cx="24.0" cy="368.0" r="14.0" fill="#ececec" stroke="#333" stroke-width="1.5"/><line x1="24.0" y1="357.0" x2="24.0" y2="360.5" stroke="#333" stroke-width="1.5"/><circle cx="24.0" cy="356.5" r="2" fill="#333"/><rect x="15.5" y="360.5" width="17" height="14" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/><circle cx="20.0" cy="367.0" r="1.8" fill="#333"/><circle cx="28.0" cy="367.0" r="1.8" fill="#333"/><line x1="20.0" y1="371.5" x2="28.0" y2="371.5" stroke="#333" stroke-width="1.5"/></g>
+    <text class="body" x="54.0" y="276.0" xml:space="preserve"><tspan>El pase cuesta</tspan></text>
+    <text class="body" x="54.0" y="299.0" xml:space="preserve"><tspan class="ref">$12 al día</tspan><tspan>. En</tspan><tspan class="ref"> México</tspan><tspan>,</tspan></text>
+    <text class="body" x="54.0" y="322.0" xml:space="preserve"><tspan>llamadas y datos</tspan><tspan class="ref"> están</tspan></text>
+    <text class="body" x="54.0" y="345.0" xml:space="preserve"><tspan class="ref">incluidos sin cargo</tspan><tspan> en</tspan></text>
+    <text class="body" x="54.0" y="368.0" xml:space="preserve"><tspan>el plan ilimitado.</tspan></text>
+    <rect x="10.0" y="396.0" width="271.5" height="109.0" rx="8" fill="#f6f6f6" stroke="#444" stroke-width="1.6"/>
+    <text class="verd" x="145.8" y="422.0" text-anchor="middle" fill="#444">Referencia</text>
+    <text class="note" x="20.0" y="445.0" xml:space="preserve"><tspan>Respuesta de referencia para</tspan></text>
+    <text class="note" x="20.0" y="468.0" xml:space="preserve"><tspan>comparar los tres turnos.</tspan></text>
+    <text class="colh" x="435.2" y="92" text-anchor="middle">Turno 1: subespecificación</text>
+    <rect x="299.5" y="106.0" width="237.5" height="133.0" rx="12" fill="#e8eff6" stroke="#4a6378" stroke-width="1.2"/>
+    <g class="icon-user"><circle cx="557.0" cy="225.0" r="14.0" fill="#dfe7ef" stroke="#4a6378" stroke-width="1.5"/><circle cx="557.0" cy="221.0" r="5" fill="#4a6378"/><path d="M 548.5 235.0 Q 557.0 223.0 565.5 235.0 Z" fill="#4a6378"/></g>
+    <text class="body" x="309.5" y="133.0" xml:space="preserve"><tspan>Viajamos varios días</tspan></text>
+    <text class="body" x="309.5" y="156.0" xml:space="preserve"><tspan class="hi">fuera de EE. UU.</tspan><tspan> con</tspan></text>
+    <text class="body" x="309.5" y="179.0" xml:space="preserve"><tspan>dos teléfonos con plan</tspan></text>
+    <text class="body" x="309.5" y="202.0" xml:space="preserve"><tspan>ilimitado. ¿Cómo nos</tspan></text>
+    <text class="body" x="309.5" y="225.0" xml:space="preserve"><tspan>cobrarían?</tspan></text>
+    <rect x="333.5" y="249.0" width="237.5" height="133.0" rx="12" fill="#f3f3f3" stroke="#555" stroke-width="1.2"/>
+    <g class="icon-bot"><circle cx="313.5" cy="368.0" r="14.0" fill="#ececec" stroke="#333" stroke-width="1.5"/><line x1="313.5" y1="357.0" x2="313.5" y2="360.5" stroke="#333" stroke-width="1.5"/><circle cx="313.5" cy="356.5" r="2" fill="#333"/><rect x="305.0" y="360.5" width="17" height="14" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/><circle cx="309.5" cy="367.0" r="1.8" fill="#333"/><circle cx="317.5" cy="367.0" r="1.8" fill="#333"/><line x1="309.5" y1="371.5" x2="317.5" y2="371.5" stroke="#333" stroke-width="1.5"/></g>
+    <text class="body" x="343.5" y="276.0" xml:space="preserve"><tspan class="hi">Use el pase</tspan></text>
+    <text class="body" x="343.5" y="299.0" xml:space="preserve"><tspan class="hi">internacional:</tspan></text>
+    <text class="body" x="343.5" y="322.0" xml:space="preserve"><tspan class="ref">$12 al día</tspan><tspan> la primera</tspan></text>
+    <text class="body" x="343.5" y="345.0" xml:space="preserve"><tspan>línea y</tspan><tspan class="ref"> $6 al día</tspan><tspan> cada</tspan></text>
+    <text class="body" x="343.5" y="368.0" xml:space="preserve"><tspan>línea adicional.</tspan></text>
+    <rect x="299.5" y="396.0" width="271.5" height="109.0" rx="8" fill="#fbeeee" stroke="#b3261e" stroke-width="1.6"/>
+    <text class="verd" x="435.2" y="422.0" text-anchor="middle" fill="#b3261e">FAIL</text>
+    <text class="note" x="309.5" y="445.0" xml:space="preserve"><tspan>Cobra el pase sin preguntar</tspan></text>
+    <text class="note" x="309.5" y="468.0" xml:space="preserve"><tspan>el destino; en México no hay</tspan></text>
+    <text class="note" x="309.5" y="491.0" xml:space="preserve"><tspan>cargo.</tspan></text>
+    <text class="colh" x="724.8" y="92" text-anchor="middle">Turno 2: fragmentación contextual</text>
+    <rect x="589.0" y="106.0" width="237.5" height="133.0" rx="12" fill="#e8eff6" stroke="#4a6378" stroke-width="1.2"/>
+    <g class="icon-user"><circle cx="846.5" cy="225.0" r="14.0" fill="#dfe7ef" stroke="#4a6378" stroke-width="1.5"/><circle cx="846.5" cy="221.0" r="5" fill="#4a6378"/><path d="M 838.0 235.0 Q 846.5 223.0 855.0 235.0 Z" fill="#4a6378"/></g>
+    <text class="body" x="599.0" y="133.0" xml:space="preserve"><tspan>Serán 5 días en Cancún</tspan></text>
+    <text class="body" x="599.0" y="156.0" xml:space="preserve"><tspan>(México), con los dos</tspan></text>
+    <text class="body" x="599.0" y="179.0" xml:space="preserve"><tspan>teléfonos. ¿Cuánto</tspan></text>
+    <text class="body" x="599.0" y="202.0" xml:space="preserve"><tspan>pagaríamos en total por</tspan></text>
+    <text class="body" x="599.0" y="225.0" xml:space="preserve"><tspan>roaming?</tspan></text>
+    <rect x="623.0" y="249.0" width="237.5" height="133.0" rx="12" fill="#f3f3f3" stroke="#555" stroke-width="1.2"/>
+    <g class="icon-bot"><circle cx="603.0" cy="368.0" r="14.0" fill="#ececec" stroke="#333" stroke-width="1.5"/><line x1="603.0" y1="357.0" x2="603.0" y2="360.5" stroke="#333" stroke-width="1.5"/><circle cx="603.0" cy="356.5" r="2" fill="#333"/><rect x="594.5" y="360.5" width="17" height="14" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/><circle cx="599.0" cy="367.0" r="1.8" fill="#333"/><circle cx="607.0" cy="367.0" r="1.8" fill="#333"/><line x1="599.0" y1="371.5" x2="607.0" y2="371.5" stroke="#333" stroke-width="1.5"/></g>
+    <text class="body" x="633.0" y="276.0" xml:space="preserve"><tspan>México está incluido en</tspan></text>
+    <text class="body" x="633.0" y="299.0" xml:space="preserve"><tspan>los planes ilimitados:</tspan></text>
+    <text class="body" x="633.0" y="322.0" xml:space="preserve"><tspan class="ok">no deberían tener</tspan></text>
+    <text class="body" x="633.0" y="345.0" xml:space="preserve"><tspan class="ok">cargos adicionales</tspan><tspan> por</tspan></text>
+    <text class="body" x="633.0" y="368.0" xml:space="preserve"><tspan>roaming.</tspan></text>
+    <rect x="589.0" y="396.0" width="271.5" height="109.0" rx="8" fill="#edf6f0" stroke="#1e6b3a" stroke-width="1.6"/>
+    <text class="verd" x="724.8" y="422.0" text-anchor="middle" fill="#1e6b3a">PASS</text>
+    <text class="note" x="599.0" y="445.0" xml:space="preserve"><tspan>Coincide con el control:</tspan></text>
+    <text class="note" x="599.0" y="468.0" xml:space="preserve"><tspan>México no tiene cargo.</tspan></text>
+    <text class="colh" x="1014.2" y="92" text-anchor="middle">Turno 3: síntesis multiturno</text>
+    <rect x="878.5" y="106.0" width="237.5" height="133.0" rx="12" fill="#e8eff6" stroke="#4a6378" stroke-width="1.2"/>
+    <g class="icon-user"><circle cx="1136.0" cy="225.0" r="14.0" fill="#dfe7ef" stroke="#4a6378" stroke-width="1.5"/><circle cx="1136.0" cy="221.0" r="5" fill="#4a6378"/><path d="M 1127.5 235.0 Q 1136.0 223.0 1144.5 235.0 Z" fill="#4a6378"/></g>
+    <text class="body" x="888.5" y="133.0" xml:space="preserve"><tspan>Después iremos 3 días a</tspan></text>
+    <text class="body" x="888.5" y="156.0" xml:space="preserve"><tspan>España. ¿Cuánto</tspan></text>
+    <text class="body" x="888.5" y="179.0" xml:space="preserve"><tspan>pagaríamos por roaming</tspan></text>
+    <text class="body" x="888.5" y="202.0" xml:space="preserve"><tspan>con los dos teléfonos en</tspan></text>
+    <text class="body" x="888.5" y="225.0" xml:space="preserve"><tspan>todo el viaje?</tspan></text>
+    <rect x="912.5" y="249.0" width="237.5" height="133.0" rx="12" fill="#f3f3f3" stroke="#555" stroke-width="1.2"/>
+    <g class="icon-bot"><circle cx="892.5" cy="368.0" r="14.0" fill="#ececec" stroke="#333" stroke-width="1.5"/><line x1="892.5" y1="357.0" x2="892.5" y2="360.5" stroke="#333" stroke-width="1.5"/><circle cx="892.5" cy="356.5" r="2" fill="#333"/><rect x="884.0" y="360.5" width="17" height="14" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/><circle cx="888.5" cy="367.0" r="1.8" fill="#333"/><circle cx="896.5" cy="367.0" r="1.8" fill="#333"/><line x1="888.5" y1="371.5" x2="896.5" y2="371.5" stroke="#333" stroke-width="1.5"/></g>
+    <text class="body" x="922.5" y="276.0" xml:space="preserve"><tspan>México: $0. España:</tspan></text>
+    <text class="body" x="922.5" y="299.0" xml:space="preserve"><tspan class="hi">$12 × 2 líneas</tspan></text>
+    <text class="body" x="922.5" y="322.0" xml:space="preserve"><tspan class="hi">× 3 días = $72</tspan><tspan>.</tspan></text>
+    <rect x="878.5" y="396.0" width="271.5" height="109.0" rx="8" fill="#fbeeee" stroke="#b3261e" stroke-width="1.6"/>
+    <text class="verd" x="1014.2" y="422.0" text-anchor="middle" fill="#b3261e">FAIL</text>
+    <text class="note" x="888.5" y="445.0" xml:space="preserve"><tspan>Olvida su regla del turno 1</tspan></text>
+    <text class="note" x="888.5" y="468.0" xml:space="preserve"><tspan>($6 la línea adicional): eran</tspan></text>
+    <text class="note" x="888.5" y="491.0" xml:space="preserve"><tspan>$54.</tspan></text>
+    <path d="M 573.0 244.0 L 585.0 244.0" stroke="#777" stroke-width="1.6" marker-end="url(#arr)"/>
+    <path d="M 862.5 244.0 L 874.5 244.0" stroke="#777" stroke-width="1.6" marker-end="url(#arr)"/>
+    <line x1="290.5" y1="62" x2="290.5" y2="505.0" class="rule"/>
+    <rect x="10" y="519.0" width="1140" height="94.0" rx="10" fill="#fbeeee" stroke="#b3261e" stroke-width="1.8"/>
+    <text class="body" x="580.0" y="552.0" text-anchor="middle" xml:space="preserve"><tspan>El asistente responde bien cuando recibe todos los datos (turno 2), pero falla cuando falta un dato</tspan></text>
+    <text class="body" x="580.0" y="575.0" text-anchor="middle" xml:space="preserve"><tspan>(turno 1) y cuando debe combinar información de turnos anteriores (turno 3).</tspan></text>
+    <text class="verd" x="580.0" y="604.0" text-anchor="middle" fill="#b3261e">Al menos un turno con FAIL → conversación FAIL</text>
+</svg>
