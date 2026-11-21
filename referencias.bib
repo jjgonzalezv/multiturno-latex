@@ -5,72 +5,87 @@
 %  Detalle de cada verificación: notes/verificacion-referencias.md
 % =====================================================================
 
-% ---------------------------------------------------------------------
-% NOTA sobre la referencia 8 del .docx (NO INCLUIDA, pendiente de decisión):
-%   "Microsoft Research (2024). Faithfulness in Long-context and
-%    Multi-turn Conversations." con URL https://arxiv.org/pdf/2505.06120.
-%   No se encontró ningún trabajo con ese título. La URL apunta a
-%   arXiv:2505.06120, que es el artículo de Laban et al. (laban2025).
-%   El texto no la cita. Se excluye hasta contar con una fuente verificable.
-% ---------------------------------------------------------------------
-
-% Corregido: el texto citaba 2026. El arXiv se envió el 9 de mayo de 2025.
-@misc{laban2025,
-  author       = {Laban, Philippe and Hayashi, Hiroaki and Zhou, Yingbo and Neville, Jennifer},
-  title        = {{LLMs} get lost in multi-turn conversation},
-  year         = {2025},
-  howpublished = {arXiv preprint arXiv:2505.06120},
-  url          = {https://arxiv.org/abs/2505.06120}
+@article{farquhar2024,
+  author  = {Farquhar, Sebastian and Kossen, Jannik and Kuhn, Lorenz and Gal, Yarin},
+  title   = {Detecting Hallucinations in Large Language Models Using Semantic Entropy},
+  journal = {Nature},
+  volume  = {630},
+  number  = {8017},
+  pages   = {625--630},
+  year    = {2024},
+  doi     = {10.1038/s41586-024-07421-0},
+  url     = {https://doi.org/10.1038/s41586-024-07421-0}
 }
 
-% Corregido: el primer autor es Kevin H. Guo (el .docx decía "X. Guo").
-% Título: se usa el de la última versión (v3, mayo 2026): "...Degrade LLM Reliability".
-% El .docx citaba la v1 ("...Degrade LLM Diagnostic Reasoning"). Decisión en notes/decisiones.md.
-@misc{guo2026,
-  author       = {Guo, Kevin H. and Yan, Chao and Baidya, Avinash and Brown, Katherine and Gao, Xiang and Xiong, Juming and Yin, Zhijun and Malin, Bradley A.},
-  title        = {Stop listening to me! {H}ow multi-turn conversations can degrade {LLM} reliability},
-  year         = {2026},
-  howpublished = {arXiv preprint arXiv:2603.11394},
-  url          = {https://arxiv.org/abs/2603.11394}
-}
-
-% Verificado. Revisar en la versión de COLM 2026 la página o el DOI.
-@misc{huang2026,
-  author       = {Huang, Jenny Y. and Choshen, Leshem and Sun, Wei and Khattab, Omar and Fernandez Astudillo, Ram{\'o}n and Damani, Mehul and Broderick, Tamara and Andreas, Jacob},
-  title        = {Do {LLMs} benefit from their own words?},
-  year         = {2026},
-  howpublished = {arXiv preprint arXiv:2602.24287},
-  note         = {Aceptado en Conference on Language Modeling (COLM), 2026. Lista oficial de aceptados de COLM 2026; sin páginas publicadas.},
-  url          = {https://arxiv.org/abs/2602.24287}
-}
-
-% Verificado. Es un artículo de taller, no de conferencia principal.
-@misc{sinha2026,
-  author       = {Sinha, Aditya and Steck, Harald and Ostuni, Vito and Rinaldi, Matteo},
-  title        = {Beyond continuity: Challenges of context switching in multi-turn dialogue with {LLMs}},
-  year         = {2026},
-  howpublished = {arXiv preprint arXiv:2605.09268},
-  note         = {Aceptado en el taller ICBINB @ ICLR 2026},
-  url          = {https://arxiv.org/abs/2605.09268}
-}
-
-% Corregido: la inicial es "V." (Victoria Graf), no "A.".
 @misc{graf2026,
   author       = {Graf, Victoria and Pyatkin, Valentina and Dziri, Nouha and Lambert, Nathan and Hajishirzi, Hannaneh},
-  title        = {{TurnWise}: The gap between single- and multi-turn language model capabilities},
+  title        = {{TurnWise}: The Gap Between Single- and Multi-Turn Language Model Capabilities},
   year         = {2026},
   howpublished = {arXiv preprint arXiv:2603.16759},
   url          = {https://arxiv.org/abs/2603.16759}
 }
 
-% Corregido: el primer autor es Sahana Ramnath (el .docx decía "R. Joshi";
-% Brihi Joshi es el tercer autor). Es un artículo de EMNLP 2025, no solo un
-% preprint; la versión preprint es arXiv:2505.20451.
-% Verificado en el resumen: "humans frequently (60 to 70 percent of the time)
-% change their intents from one turn of the conversation to the next".
+@misc{guo2026,
+  author       = {Guo, Kevin H. and Yan, Chao and Baidya, Avinash and Brown, Katherine and Gao, Xiang and Xiong, Juming and Yin, Zhijun and Malin, Bradley A.},
+  title        = {Stop Listening to Me! {H}ow Multi-Turn Conversations Can Degrade {LLM} Reliability},
+  year         = {2026},
+  howpublished = {arXiv preprint arXiv:2603.11394},
+  url          = {https://arxiv.org/abs/2603.11394}
+}
+
+@misc{huang2025,
+  author       = {Huang, Jing and Zhang, Shujian and Wang, Lun and Hard, Andrew and Mathews, Rajiv and Lambert, John},
+  title        = {Eliciting Behaviors in Multi-Turn Conversations},
+  year         = {2025},
+  howpublished = {arXiv preprint arXiv:2512.23701},
+  url          = {https://arxiv.org/abs/2512.23701}
+}
+
+@misc{huang2026,
+  author       = {Huang, Jenny Y. and Choshen, Leshem and Sun, Wei and Khattab, Omar and Fernandez Astudillo, Ram{\'o}n and Damani, Mehul and Broderick, Tamara and Andreas, Jacob},
+  title        = {Do {LLMs} Benefit from Their Own Words?},
+  year         = {2026},
+  howpublished = {arXiv preprint arXiv:2602.24287},
+  note         = {Aceptado en Conference on Language Modeling (COLM), 2026},
+  url          = {https://arxiv.org/abs/2602.24287}
+}
+
+@article{ji2023,
+  author  = {Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Ye Jin and Madotto, Andrea and Fung, Pascale},
+  title   = {Survey of Hallucination in Natural Language Generation},
+  journal = {ACM Computing Surveys},
+  volume  = {55},
+  number  = {12},
+  pages   = {1--38},
+  year    = {2023},
+  doi     = {10.1145/3571730},
+  url     = {https://doi.org/10.1145/3571730}
+}
+
+@misc{laban2025,
+  author       = {Laban, Philippe and Hayashi, Hiroaki and Zhou, Yingbo and Neville, Jennifer},
+  title        = {{LLMs} Get Lost in Multi-Turn Conversation},
+  year         = {2025},
+  howpublished = {arXiv preprint arXiv:2505.06120},
+  url          = {https://arxiv.org/abs/2505.06120}
+}
+
+@article{larsen2025,
+  author  = {Larsen, Anna Gr{\o}ndahl and Skjuve, Marita Bjaaland and F{\o}lstad, Asbj{\o}rn and van As, Nena},
+  title   = {{LLM} Hallucinations in Conversational {AI} for Customer Service: Framework and End-User Perceptions},
+  journal = {International Journal of Human-Computer Interaction},
+  volume  = {42},
+  number  = {13},
+  pages   = {9807--9828},
+  year    = {2025},
+  doi     = {10.1080/10447318.2025.2580540},
+  url     = {https://doi.org/10.1080/10447318.2025.2580540},
+  note    = {Publicado en línea el 6 de noviembre de 2025}
+}
+
 @inproceedings{ramnath2025,
   author    = {Ramnath, Sahana and Mudgil, Anurag and Joshi, Brihi and Hallinan, Skyler and Ren, Xiang},
-  title     = {{Amulet}: Putting complex multi-turn conversations on the stand with {LLM} juries},
+  title     = {{Amulet}: Putting Complex Multi-Turn Conversations on the Stand with {LLM} Juries},
   booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
   pages     = {25594--25635},
   publisher = {Association for Computational Linguistics},
@@ -79,13 +94,31 @@
   url       = {https://aclanthology.org/2025.emnlp-main.1300/}
 }
 
-% Corregida la inicial: Jing Huang (el .docx decía "X. Huang"). Este Huang no es el de huang2026.
-% Verificado en el texto completo: los métodos online (dinámicos) logran una
-% tasa de éxito donde los métodos estáticos encuentran pocos o ningún fallo.
-@misc{huang2025,
-  author       = {Huang, Jing and Zhang, Shujian and Wang, Lun and Hard, Andrew and Mathews, Rajiv and Lambert, John},
-  title        = {Eliciting behaviors in multi-turn conversations},
-  year         = {2025},
-  howpublished = {arXiv preprint arXiv:2512.23701},
-  url          = {https://arxiv.org/abs/2512.23701}
+@inproceedings{sharma2024,
+  author    = {Sharma, Mrinank and Tong, Meg and Korbak, Tomek and Duvenaud, David and Askell, Amanda and Bowman, Samuel R. and Durmus, Esin and Hatfield-Dodds, Zac and Johnston, Scott and Kravec, Shauna and Maxwell, Timothy and McCandlish, Sam and Ndousse, Kamal and Rausch, Oliver and Schiefer, Nicholas and Yan, Da and Zhang, Miranda and Perez, Ethan},
+  title     = {Towards Understanding Sycophancy in Language Models},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2024},
+  url       = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/0105f7972202c1d4fb817da9f21a9663-Abstract-Conference.html}
 }
+
+@misc{sinha2026,
+  author       = {Sinha, Aditya and Steck, Harald and Ostuni, Vito and Rinaldi, Matteo},
+  title        = {Beyond Continuity: Challenges of Context Switching in Multi-Turn Dialogue with {LLMs}},
+  year         = {2026},
+  howpublished = {arXiv preprint arXiv:2605.09268},
+  note         = {Aceptado en el taller ICBINB @ ICLR 2026},
+  url          = {https://arxiv.org/abs/2605.09268}
+}
+
+@inproceedings{yuan2024,
+  author    = {Yuan, Hongbang and Cao, Pengfei and Jin, Zhuoran and Chen, Yubo and Zeng, Daojian and Liu, Kang and Zhao, Jun},
+  title     = {Whispers that Shake Foundations: Analyzing and Mitigating False Premise Hallucinations in Large Language Models},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages     = {2670--2683},
+  publisher = {Association for Computational Linguistics},
+  year      = {2024},
+  doi       = {10.18653/v1/2024.emnlp-main.155},
+  url       = {https://aclanthology.org/2024.emnlp-main.155/}
+}
+

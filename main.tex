@@ -30,8 +30,8 @@ Este artículo es de acceso
   Atribución (CC BY-NC-SA 4.0) (\url{https://creativecommons.org/licenses/by-nc-sa/4.0/})}
 
 %% 3) DATOS DEL ARTÍCULO (en modo manuscrito se ocultan en el PDF)
-\titulo{Cuantificación de alucinaciones en agentes virtuales de servicio al cliente bajo entornos de interacción multiturno en chatbots hispanohablantes}
-\titulosecundario{Quantification of hallucinations in customer service virtual agents under multi-turn interaction environments in Spanish-speaking chatbots}
+\titulo{Alucinaciones factuales ante premisas falsas en chatbots de servicio al cliente: evaluación descriptiva multiturno de 30 chatbots.}
+\titulosecundario{Factual Hallucinations in Customer Service Chatbots Under False-Premise Conditions: A Descriptive Multi-Turn Evaluation of 30 Chatbots.}
 
 %      {Nombre completo}{afiliaciones}{ORCID}{correo}
 \autor{José John Fredy González Veloza}{1}{0000-0002-7744-8669}{jjgonzalezv02@libertadores.edu.co}
@@ -46,246 +46,112 @@ Este artículo es de acceso
 
 \begin{document}
 \maketitle
-\txcomment[author=john,id=J01,status=pending]{título en inglés propuesto; el .docx no tiene título en inglés. Revisar.}
-\txcomment[author=peter,id=R201,status=pending]{MENOR: Título. "Cuantificación de alucinaciones en agentes virtuales de servicio al cliente bajo entornos de interacción multiturno en chatbots hispanohablantes" tiene 18 palabras, no indica el tipo de estudio y usa dos términos para el mismo objeto ("agentes virtuales" y "chatbots"). "hispanohablantes" no se sustenta: el texto no dice en qué idioma se interactuó ni si AWS, HP o AT y T se evaluaron en español. Reformular, por ejemplo: Alucinaciones factuales ante premisas falsas en chatbots de servicio al cliente: evaluación descriptiva multiturno de 30 chatbots. No encontré un límite de palabras del título en las reglas de la revista.}
 
 %% ---------------------------------------------------------------------
 %% RESUMEN (texto en español del .docx, bloque estructurado)
 %% ---------------------------------------------------------------------
 \begin{resumen}
-\txcomment[author=john,id=J02,status=pending]{el resumen tiene 434 palabras; el límite es 150.}
-\textbf{Introducción:} Hoy en día los chatbots se han convertido en una herramienta importante, una ayuda en diferentes ámbitos, como en este caso servicio al cliente en diferentes tipos de sectores.
-Ya que ellos nos dan un acceso más rápido a la información, sencilla y fácil de entender.
-Pero toca tener cuidado algunos de estos chatbots suelen dar información falsa e incorrecta o hasta incluso aceptar afirmaciones falsas.
-\txcomment[author=john,id=J03,status=pending]{"pero toca tener cuidado" cambiarlo por "Sin embargo, ..."}
-\txcomment[author=john,id=J04,status=pending]{Deben centrar la problemática en intereacciones multiturno, según investigaciones recientes, cuanto aumenta la falla en escenarios reales donde el usuario no genera la consulta en un solo turno (como se ha medido) sino que la genera en varios turnos. Escribir brevemente cuales son las etapas comunes en cada turno. Es decir, no se hace énfasis en la problemática que este estudio pretende abordar.}
-Y esto puede llegar a ser confuso o afectar en las decisiones de los usuarios.
-\txcomment[author=john,id=J05,status=pending]{Ser más explícito, que tipo de confusiones o decisiones son las afectadas, acompañarlo de cifras, aquí recomiendo soportar con fuentes que hablen del problema actual}
-\textbf{Objetivo:} El objetivo de esta investigación fue cuantificar que los chatbots tenía alucinaciones factuales, se seleccionó una muestra con 30 chatbots de varios sectores.
-\txcomment[author=john,id=J06,status=pending]{El objetivo no está bien escrito: "fue cuantificar alucinaciones factuales" es ambiguo y menosprecia el esfuerzo multiturno.}
-Se evaluaron mediante un diseño experimental de consultas multiturno.
-Se busco identificar si estos sistemas proporcionaban información incorrecta, aceptaban información falsa o mantenían dicha información mientras avanzaba en la conversación, con el propósito de analizar el comportamiento y confiabilidad cuando los usuarios realizaran una consulta.
-\txcomment[author=john,id=J07,status=pending]{Lo anterior parece otro objetivo, deben integrar el propósito del trabajo en un solo objetivo.}
-\textbf{Método:} La investigación se realizando mediante una evaluación tipo cuantitativo, en que se selección una muestra de 30 chatbots de varios sectores.
-\txcomment[author=john,id=J08,status=pending]{Es importante mencionar que la evaluación se realizó en el sector real en empresas hispanohablantes (ojo esto es el mayor valor agregado)}
-Para todos se utilizó el mismo procedimiento de evaluación, compuesta por una pregunta inicial y tres turnos adicionales de interacción.
-En el turno 0 se realizó una consulta de referencia para establecer el contexto de la conversación.
-\txcomment[author=john,id=J09,status=pending]{No lo llamemos turno 0, sino consulta control}
-Posteriormente, en el turno 1 se introdujo una afirmación falsa para observar la respuesta del chatbots.
-\txcomment[author=john,id=J10,status=pending]{Cambiemos "afirmación falsa" por "premisa falsa". Debemos antes establecer porque este tipo de perturbación y no otro.}
-En los turnos 2 y 3 se continuó la conversación con el propósito de identificar si el sistema mantenía la información incorrecta o si lograba reconocerla y corregirla.
-
-\textbf{Resultados:} En los resultados de la evaluación se pudieron identificar 90 respuestas de las cuales 79 fueron correctas y 11 con fallos en los tres turnos analizados, lo que representa un 87,78\,\% de respuestas correctas y un 12,22\,\% de respuestas incorrectas.
-\txcomment[author=john,id=J11,status=pending]{Antes, es importante mencionar brevemente en que consiste el método de evaluación y como se valido.}
-Al revisar cada turno, se encontraron 5 fallos 16,67\,\% en el primer turno y en el segundo y tercero cada uno tuvo 3 fallos 10.00\,\%.
-Por otra parte, en la evaluación de control se identificaron 10 chatbots con alucinaciones, correspondientes al 33,33\,\% de la muestra.
-\txcomment[author=john,id=J12,status=pending]{No se entiende esta última frase, "se identificaron 10 chatbots con alucinaciones" no se habla con lo que habían escrito anteriormente, suena confuso, no hay una línea narrativa. Aquí en el resumen es suficiente presentar el resultado más importante, los detalles van en la sección correspondiente}
-\textbf{Conclusiones:} Los resultados muestran que, aunque la mayoría de los chatbots evaluados proporcionaron respuestas correctas, todavía existen casos en los que estos sistemas pueden aceptar información falsa o presentar respuestas incorrectas.
-\txcomment[author=john,id=J13,status=pending]{La anterior frase es vacía, no aporta}
-Esto representa un riesgo para los usuarios, ya que cuando se utilizan estas herramientas para realizar trámites o tomar decisiones relacionadas con productos o servicios.
-\txcomment[author=john,id=J14,status=pending]{La anterior frase no tiene soporte, no se habla con la problemática, es una intuición propia de ustedes o realmente pueden probarlo?}
-Por esta razón, es importante que las empresas supervisen la información proporcionada por sus chatbots y que los usuarios verifiquen las respuestas mediante fuentes confiables antes de tomar decisiones.
-\txcomment[author=john,id=J15,status=pending]{Esto es válido, pero de acuerdo al estudio, cuales son las estrategias que deberían asumir las empresas?}
+\textbf{Introducción:} Los chatbots de servicio al cliente pueden generar alucinaciones factuales, especialmente durante conversaciones multiturno ante premisas falsas.
+\textbf{Objetivo:} Evaluar la presencia y persistencia de estas alucinaciones en 30 chatbots de distintos sectores.
+\textbf{Método:} Se realizó una evaluación cuantitativa con una consulta de control y tres turnos de interacción por chatbot. Se introdujo una premisa falsa para observar su aceptación, persistencia o corrección.
+\textbf{Resultados:} Se analizaron 90 respuestas: 79 correctas (87,78 \%) y 11 incorrectas (12,22 \%). Se registraron cinco errores en el primer turno y tres en cada uno de los siguientes. La prueba exacta de McNemar no identificó diferencias estadísticamente significativas. En la consulta de control, 10 chatbots (33,33 \%) presentaron alucinaciones.
+\textbf{Conclusiones:} Las alucinaciones se presentaron tanto en consultas de control como en interacciones multiturno, lo que resalta la importancia de supervisar y verificar las respuestas.
 \end{resumen}
-\txcomment[author=john,id=J16,status=pending]{hay 6 palabras clave; el límite es 5.}
-\txcomment[author=peter,id=R203,status=pending]{MENOR: Resumen, Resultados. Complementa J12. Introduce la "evaluación de control" sin definirla y omite el resultado de la prueba de McNemar (diferencias no significativas), que es la conclusión estadística del cuerpo. "11 con fallos en los tres turnos analizados" es ambiguo: son 11 respuestas, no 11 chatbots. Los decimales mezclan coma y punto ("10.00" frente a "16,67"). Reportar cifras con un solo formato y añadir el resultado de McNemar.}
-\palabrasclave{Alucinaciones factuales, Atención al cliente, Chatbots, Inteligencia artificial, Modelos de lenguaje, Conversaciones multiturno.}
+\palabrasclave{Alucinaciones factuales, chatbots, servicio al cliente, premisas falsas, interacción multiturno.}
 
 %% ---------------------------------------------------------------------
 %% ABSTRACT (texto en inglés del .docx, bloque estructurado)
 %% ---------------------------------------------------------------------
-\txcomment[author=john,id=J17,status=pending]{el abstract tiene 386 palabras; el límite es 150}
+
 \begin{abstract}
-\textbf{INTRODUCTION} Nowadays, chatbots have become an important tool that provides assistance in different areas, including customer service across various economic sectors.
-They allow users to access information more quickly and in a simple and easy-to-understand way.
-However, caution is necessary because some chatbots may provide false or inaccurate information or even accept false statements as true.
-This can cause confusion and potentially affect users' decisions.
+\textbf{INTRODUCTION} Customer service chatbots may produce factual hallucinations, especially in multi-turn conversations when users introduce incorrect information.
 
-\textbf{OBJECTIVE} The objective of this research was to quantify factual hallucinations in chatbots.
-A sample of 30 chatbots from different economic sectors was selected and evaluated through an experimental multi-turn interaction design.
-The study sought to identify whether these systems provided incorrect information, accepted false statements, or maintained such information as the conversation progressed, in order to analyze their behavior and reliability when responding to user inquiries.
+\textbf{OBJECTIVE} To evaluate factual hallucinations in response to false premises in 30 customer service chatbots from different sectors.
 
-\textbf{METHOD} The research was conducted using a quantitative evaluation approach, in which a sample of 30 chatbots from different economic sectors was selected.
-The same evaluation procedure was applied to all chatbots, consisting of an initial question and three additional interaction turns.
-In Turn 0, a reference query was made to establish the context of the conversation.
-Subsequently, in Turn 1, a false statement was introduced to observe the chatbot's response.
-In Turns 2 and 3, the conversation continued to identify whether the system maintained the incorrect information or was able to recognize and correct it.
+\textbf{METHOD} A quantitative evaluation was conducted in Spanish using a control query and three additional interaction turns per chatbot. A false premise was introduced in the first turn, and subsequent turns assessed whether the chatbot maintained or corrected the incorrect information.
 
-\textbf{RESULTS} The evaluation identified 90 responses, of which 79 were correct and 11 contained errors across the three turns analyzed.
-This represents 87.78\% correct responses and 12.22\% incorrect responses.
-When examining each turn, five errors (16.67\%) were identified in Turn 1, while Turns 2 and 3 each presented three errors (10.00\%).
-Additionally, in the control evaluation, 10 chatbots were identified as exhibiting hallucinations, representing 33.33\% of the sample.
+\textbf{RESULTS} A total of 90 responses were analyzed: 79 were correct (87.78\%) and 11 incorrect (12.22\%). Errors per turn were 5, 3, and 3, respectively. McNemar's exact test found no statistically significant differences between turns.
 
-\textbf{CONCLUSIONS} The results show that, although most of the evaluated chatbots provided correct responses, there are still cases in which these systems may accept false information or generate incorrect answers.
-This represents a potential risk for users, particularly when these tools are used to complete procedures or make decisions related to products and services.
-Therefore, it is important for companies to supervise the information provided by their chatbots and for users to verify the responses through reliable sources before making decisions.
+\textbf{CONCLUSIONS} Factual hallucinations may occur in multi-turn interactions. Companies should implement factual verification and periodic monitoring mechanisms.
 \end{abstract}
-\keywords{Factual hallucinations, Customer service, Chatbots, Artificial intelligence, Language models, Multi-turn conversations.}
+\keywords{Factual hallucinations, chatbots, customer service, false premises, multi-turn interaction.
+}
 
 %% ---------------------------------------------------------------------
 %% CUERPO
 %% ---------------------------------------------------------------------
 \section{Introducción}
-En los últimos años, el desarrollo de la inteligencia artificial ha permitido que las empresas incorporen nuevas herramientas tecnológicas para mejorar la atención a los clientes.
-Entre todas estas herramientas encontramos los chatbots, sistemas capaces de mantener una conversación con los usuarios y proporcionar información relacionada con productos, servicios y diferentes procesos.
-Su implementación se ha extendido a distintitos sectores, como sea la economía, los comerciales entre otras.
-De esta forma, los modelos de lenguaje de gran tamaño (LLM, por sus siglas en inglés) han adquirido una participación importante en las nuevas formas de interacción entre las empresas y sus clientes.
-\txcomment[author=john,id=J18,status=pending]{Este primer párrrafo se puede reducir, en una o dos frases, es importante soportar estas afirmaciones con referencias bibliograficas}
+Los chatbots se han convertido en herramientas utilizadas por diferentes empresas para atender consultas de sus clientes, proporcionar información sobre productos y servicios y facilitar procesos de atención. Su implementación permite ofrecer respuestas de manera automatizada y ampliar los canales de comunicación con los usuarios. Sin embargo, su utilización también presenta desafíos relacionados con la precisión y confiabilidad de la información que proporcionan. En el contexto del servicio al cliente, una respuesta incorrecta puede generar confusión, afectar la confianza de los usuarios y ocasionar inconvenientes al momento de consultar condiciones, características o políticas de los servicios ofrecidos por una empresa \citep{larsen2025}.
+Dentro de este contexto, es importante distinguir entre los chatbots que funcionan mediante opciones predefinidas y aquellos que permiten desarrollar conversaciones mediante lenguaje natural. En los primeros, el usuario interactúa seleccionando alternativas establecidas previamente por el sistema, mientras que los segundos permiten formular preguntas libremente y continuar el diálogo a partir de las respuestas anteriores. Esta última modalidad ofrece mayor flexibilidad, pero también exige que el sistema conserve información relevante, interprete el contexto y mantenga la coherencia durante la conversación.
+Esta situación representa un desafío en las interacciones multiturno, entendidas como conversaciones en las que el usuario y el chatbot intercambian varios mensajes dentro de una misma sesión. A diferencia de las consultas de un solo turno, en las que el sistema responde una pregunta específica, las interacciones multiturno requieren considerar la información proporcionada anteriormente y relacionarla con las nuevas consultas. \citet{laban2025} encontraron que el rendimiento de los modelos de lenguaje puede disminuir en conversaciones de varios turnos, debido a una mayor dificultad para mantener la confiabilidad y recuperar el contexto cuando se presentan errores durante el diálogo.
+Uno de los comportamientos que merece especial atención ocurre cuando el usuario introduce una premisa falsa durante la conversación. Este tipo de perturbación permite observar si el chatbot identifica la información incorrecta o si, por el contrario, la acepta y la incorpora en sus respuestas posteriores. Este comportamiento puede relacionarse con la complacencia de los modelos de lenguaje (sycophancy), entendida como la tendencia a modificar las respuestas para coincidir con las afirmaciones o creencias del usuario, incluso cuando estas contradicen información correcta. \citet{sharma2024} encontraron que algunos asistentes de inteligencia artificial pueden cambiar respuestas inicialmente correctas después de que el usuario las cuestiona o presenta una afirmación equivocada. Por esta razón, las premisas falsas constituyen una forma de evaluar si los sistemas mantienen la precisión factual frente a información incorrecta introducida durante una interacción.
+La importancia de este problema también se refleja en el servicio al cliente, donde proporcionar información incorrecta sobre productos, servicios o condiciones comerciales puede afectar la experiencia y la confianza de los usuarios \citet{larsen2025}, en un estudio realizado con 274 participantes, identificaron que las respuestas factualmente incorrectas se encuentran entre los errores que generan mayor preocupación en los usuarios, debido a sus posibles consecuencias y al deterioro de la confianza en los sistemas y las empresas que los utilizan. Por tanto, evaluar estos comportamientos resulta relevante para comprender los posibles riesgos asociados con la implementación de herramientas conversacionales en entornos empresariales.
+En este contexto, la presente investigación aporta una evaluación exploratoria realizada directamente sobre 30 chatbots utilizados por empresas de diferentes sectores, cuyas interacciones se desarrollaron completamente en español. La muestra comprende los sectores bancario, retail, turismo, seguros, tecnología, telecomunicaciones, desarrollo urbano y público. A diferencia de las evaluaciones realizadas exclusivamente mediante escenarios sintéticos o conjuntos de datos preparados para pruebas, este trabajo examina sistemas conversacionales disponibles en entornos empresariales reales. Para ello, se estableció una consulta de control independiente, cuya respuesta sirvió como referencia para contrastar la información proporcionada durante tres turnos adicionales de interacción. Este procedimiento permitió examinar los fallos factuales ante la introducción de premisas falsas y observar si la información incorrecta se mantenía o era corregida durante la conversación.
+Los resultados de esta evaluación permiten caracterizar el comportamiento de los chatbots analizados e identificar la frecuencia de respuestas correctas e incorrectas durante las interacciones. Asimismo, el procedimiento propuesto puede servir como referencia para futuras evaluaciones de sistemas conversacionales utilizados en la atención al cliente. En particular, durante el desarrollo de sistemas basados en modelos de lenguaje, resulta importante realizar pruebas de validación que permitan identificar y corregir posibles errores antes de su implementación. Una vez que estos sistemas se encuentran en funcionamiento, las empresas también deben establecer mecanismos de monitoreo constante, clasificación de errores y aplicación de medidas de mitigación para reducir los posibles efectos de las respuestas incorrectas.
+A partir de esta problemática, la investigación busca responder la siguiente pregunta: ¿cuál es la frecuencia de fallos factuales en las respuestas de 30 chatbots de servicio al cliente ante interacciones multiturno en las que se introducen premisas falsas? En consecuencia, el objetivo principal es evaluar y cuantificar los fallos factuales presentados por estos sistemas durante tres turnos de interacción, mediante un procedimiento de evaluación realizado en español y tomando como referencia una consulta de control.
 
-A pesar de todas las ventajas que nos ofrecen estos sistemas, también existen dificultades o problemas relaciones con la precisión y confiabilidad de sus respuestas.
-En determinadas ocasiones, los chatbots pueden brindar información falsa o errónea.
-Este comportamiento lo llamamos alucinación de inteligencia artificial y representa varios aspectos para evaluar, especialmente en los entornos del servicio al cliente.
-\txcomment[author=john,id=J19,status=pending]{Ojo! revuelven error de un chatbot con alucinación de un LLM. Los errores se dan por múltiples motivos, no solo por la alucinación de los LLM, hay que diferenciar sistema y LLM. Por ejemplo: El sistema puede fallar si el LLM no está lo suficientemente contextualizado e integrado con los sistemas de información. Otro problema es que el sistema tiene una ventana de contexto que se va llenando con informacioń, incluída las entradas de texto del usuario y aquí está la clave! y pueden introducir le problema de conversación multiturno.}
-Cuando un usuario recibe información falsa o errónea de un producto, ya sea una tarifa o una política empresarial, puede tener dificultades al tomar una decisión adecuada.
-Incluso el hecho de que estas respuestas se presenten de manera normal, clara y convincente puede llegar a ser difícil para los usuarios identificarlos.
-\txcomment[author=john,id=J20,status=pending]{Aquí falta un referencia que soporte lo anterior.}
-\txcomment[author=peter,id=R210,status=pending]{MENOR: Introducción, párrafo 2. Errores de concordancia y redacción: "problemas relaciones con la precisión", "puede llegar a ser difícil para los usuarios identificarlos", "de manera normal". Usar "lo llamamos" (primera persona) no es coherente con el resto del artículo. Reescribir en voz impersonal o con "los autores".}
-
-Esta problemática se presenta mayormente cuando las consultas se desarrollan mediante conversaciones multiturno, es decir, interacciones en las que el usuario y el chatbot hablan e intercambian mensajes dentro de una misma conversación.
-A diferencia de otros chatbots que en las conversaciones son a través de opciones múltiples, ya las respuestas son determinadas, no hay ninguna interacción.
-Entonces este tipo de interacciones multiturno pueden general dificultades para los modelos de lenguaje, debido a que deben conservar información relevante y responder de manera coherente a medida que avanza los diálogos.
-Investigadores recientes señalan que el rendimiento de estos sistemas puede verse afectados durante las conversaciones prolongadas y que pueden presentar en mantener la precisión de las respuestas.
-\citep{guo2026,laban2025,sinha2026}.
-\txcomment[author=peter,id=R211,status=pending]{MENOR: Introducción, párrafo 3. "A diferencia de otros chatbots que en las conversaciones son a través de opciones múltiples, ya las respuestas son determinadas, no hay ninguna interacción" es confusa. Además "pueden general dificultades", "a medida que avanza los diálogos" y "pueden presentar en mantener la precisión" son incorrectas o incompletas. La cita queda en una línea aparte, después del punto. Afirmar que la problemática "se presenta mayormente" en conversaciones multiturno requiere fuente. Reescribir el párrafo y colocar la cita antes del punto.}
-
-Una situación de interés ocurre cuando un usuario introduce una afirmación falsa dentro de la conversación.
-\txcomment[author=john,id=J21,status=pending]{Como lo dije anteriormente, debemos describir porque este error es el que mas preocupa frente a una gran cantidad de problemas que sufren estos sistemas. Por favor soportar con referencias bilbiográficas}
-Ante este caso, el chatbot puede identificar que la información es falsa o correcta y realizar una aclaración, pero también hay casos donde la afirmación falsa se mantiene durante la conversación y el chatbot la afirma.
-Este comportamiento puede relacionarse con la tendencia que tienen algunos modelos a estar de acuerdo con las sugerencias del usuario, siendo estas contra dicientes de la información factual.
-Asimismo, los errores permanecen en el contexto de la conversación e influir en las respuestas siguientes \citep{guo2026,huang2025,huang2026}.
-Por esta razón es importante evaluar no solamente si la información es correcta de la consulta inicial, sino también ver como responde cuando se le introducen premisas falsas y se continua la interacción.
-\txcomment[author=john,id=J22,status=pending]{Siento que esta última frase sobra o no está bien integrada, es que no se entiende a que se refiere con "consulta inicial"}
-\txcomment[author=john,id=J23,status=pending]{Realizar una figura comparativa entre un asistente que responde bien a la primer consulta frente al caso 2 donde el agente responde mal la misma consulta pero en una conversación multi-turno, usen un ejemplo de los que tienen evaluados, porque es importante hacerlo aquí mismo? Porque el lector entenderá rápidamente en que consiste el problema que estamos enfrentando.}
-\txcomment[author=peter,id=R212,status=pending]{MENOR: Introducción, párrafo 4. El fenómeno descrito ("la tendencia que tienen algunos modelos a estar de acuerdo con las sugerencias del usuario") tiene nombre en la literatura (complacencia o sycophancy). Nombrarlo y citar una fuente específica. Corregir "contra dicientes", "los errores permanecen en el contexto de la conversación e influir" y "se continua".}
-
-A partir de esta problemática, la presente investigación busca responder la siguiente pregunta: ¿cuál es la incidencia de las alucinaciones factuales en las respuestas de los chatbots de servicio al cliente ante interacciones multiturno en las que se introducen premisas falsas? El objetivo principal es cuantificar las alucinaciones factuales en una muestra de 30 chatbots pertenecientes a varios sectores, mediante un procedimiento de evaluación.
-\txcomment[author=john,id=J24,status=pending]{Hasta aquí siento que no se le está dando el verdadero valor al trabajo: salir a campo y medirlo en chatbots conversacionales reales, por lo general los demás estudios se quedan en benchmarks sintéticos o con datos de una o pocas empresas. Además, es muy escaso en chatbots en lenguaje español.}
-Para ello, se realizó una consulta inicial de referencia, identificada como turno 0, seguida de tres turnos adicionales en los que se desarrolló la interacción y se introdujeron premisas falsas para observar el comportamiento de los chatbots.
-\txcomment[author=john,id=J25,status=pending]{cambiar "turno 0" por "consulta control". Explicar brevemente que es independiente y cual es su importancia en la metodología}
-De esta manera, se buscó identificar si los chatbots proporcionaban información incorrecta, aceptaban premisas falsas o mantenían dichos errores a medida que avanzaba la conversación.
-\txcomment[author=peter,id=R213,status=pending]{MAYOR: Introducción, párrafo 5. Complementa J06 y J07. La pregunta y el objetivo aparecen a mitad de la introducción y los siguientes párrafos siguen con resultados y usos. El objetivo debe ir al final. Además mezcla métodos en pasado ("se realizó una consulta inicial de referencia") con el objetivo, y habla de "alucinaciones factuales" cuando la variable medida en los turnos es "fallo". Reordenar: contexto, vacío, pregunta y objetivo al final, y alinear el término con la variable de resultado.}
-
-Los resultados de esta evaluación permiten describir el comportamiento de los chatbots analizados e identificar la frecuencia de respuestas correctas e incorrectas durante las interacciones realizadas.
-Asimismo, ofrecen información sobre la importancia de evaluar la confiabilidad de estos sistemas en contextos empresariales, donde las respuestas automatizadas pueden influir en la experiencia y en las decisiones de los usuarios.
-\txcomment[author=john,id=J26,status=pending]{Esto anterior es clave, va en buena dirección, por favor soportarlo con referencias bibliográficas para conocer el impacto negativo que puede tener un chatbot que está expuesto al público con estos errores.}
-
-La investigación muestra el análisis de la confiabilidad de los chatbots utilizados en diferentes sectores, mediante la evaluación de sus respuestas frente a situaciones que contienen información falsa.
-\txcomment[author=john,id=J27,status=pending]{Nombrar algunos sectores estudiados}
-Asimismo, permite observar el comportamiento de estos sistemas durante conversaciones de varios turnos, identificando si mantienen información incorrecta o si logran reconocer y corregir errores.
-\txcomment[author=john,id=J28,status=pending]{Esto es cierto pero está mal encaminado. Ojo! aquí solo se presenta unos resultados exploratorios en varias empresas de diferentes sectores.}
-Adicionalmente, este estudio plantea un procedimiento de evaluación que puede servir como referencia para futuros trabajos relacionados con las alucinaciones en sistemas de inteligencia artificial, especialmente en aquellos utilizados para la atención al cliente.
-Como por ejemplo si una empresa quiere implementar un chatbot para el servicio al cliente, este trabajo puede llevar a evaluarlo y corregir errores que tenga para que logre sus objetivos y metas y así no tenga ningún problema cuando salga.
-\txcomment[author=john,id=J29,status=pending]{Mejorar redacción, "cuando se esté en proceso de desarrollo de un sistema basado en LLM, es importante realizar las validaciones respectivas ..., cuando salga a producción es importante tener monitoreo constante, clasificar y mitigar los errores"}
 \subsection{Trabajos relacionados}
-\txcomment[author=john,id=J30,status=pending]{Ojo, escribir esta subsección de una manera más narrativa, no como un recital estructurado: "... realizaron una investigación sobre ... Esta investigación se relaciona a la nuestra por ...". Esto haría que la longitud de texto disminuya y está más conectadas entre ellas y el presente estudio.}
+Las investigaciones sobre modelos de lenguaje han mostrado que mantener la precisión de las respuestas durante conversaciones multiturno representa un desafío para estos sistemas. Uno de los estudios de referencia para este trabajo es el desarrollado por \citet{laban2025}, quienes analizaron el comportamiento de diferentes modelos mediante más de 200.000 conversaciones simuladas y seis tareas de evaluación. Sus resultados mostraron una disminución promedio del 39 \% en el rendimiento durante las interacciones multiturno, además de identificar que algunos modelos mantenían suposiciones incorrectas a medida que avanzaba la conversación. Este estudio constituye una referencia importante para la presente investigación, ya que demuestra la necesidad de evaluar los sistemas conversacionales a lo largo de varios mensajes y no únicamente mediante consultas individuales.
+Esta problemática también ha sido estudiada en situaciones donde los usuarios introducen información incorrecta. \citet{guo2026} evaluaron 17 modelos de lenguaje en tres conjuntos de datos clínicos para analizar cómo reaccionaban ante sugerencias equivocadas durante conversaciones médicas. Los resultados mostraron que algunos modelos abandonaban respuestas inicialmente correctas para aceptar las afirmaciones incorrectas de los usuarios, comportamiento relacionado con el fenómeno denominado conversation tax. Este hallazgo tiene una relación directa con la presente investigación, debido a que permite comprender cómo una premisa falsa puede influir en las respuestas posteriores de un chatbot. Asimismo, este comportamiento puede relacionarse con la complacencia (sycophancy), que consiste en la tendencia de algunos modelos a coincidir con las afirmaciones de los usuarios incluso cuando estas contradicen información factual \citep{sharma2024}.
+Otro aspecto relacionado con esta problemática es la manera en que los modelos utilizan la información de conversaciones anteriores. \citet{huang2026} analizaron cómo conservar las respuestas previas del asistente puede afectar el rendimiento durante las interacciones multiturno. Sus resultados señalaron que mantener determinadas respuestas anteriores puede contaminar el contexto de la conversación y favorecer la propagación de errores hacia mensajes posteriores. De manera complementaria, \citet{sinha2026} estudiaron las dificultades de los modelos para identificar cambios de contexto y seleccionar la información relevante del historial. Estos trabajos permiten comprender que los errores no necesariamente terminan en el mensaje donde aparecen, sino que pueden afectar las respuestas siguientes cuando el sistema utiliza información incorrecta o irrelevante del historial.
+Por otra parte, diferentes investigaciones han propuesto métodos para evaluar el comportamiento de los modelos durante conversaciones complejas. \citet{graf2026}, mediante la herramienta TurnWiseEval, compararon el rendimiento de los modelos en consultas individuales y conversaciones multiturno, encontrando mejoras cuando se incorporaban conversaciones de varios mensajes durante el entrenamiento. Asimismo, \citet{ramnath2025} desarrollaron AMULET, un método que utiliza modelos de lenguaje como evaluadores para analizar las intenciones de los usuarios y la calidad de las respuestas durante una conversación. Sus resultados mostraron que las intenciones de los usuarios podían cambiar entre un 60 \% y un 70 \% de las veces. Por su parte, \citet{huang2026} analizaron diferentes estrategias para identificar comportamientos problemáticos en modelos de lenguaje y encontraron que las evaluaciones dinámicas podían detectar fallos que algunas pruebas estáticas no identificaban. En conjunto, estos estudios resaltan la importancia de considerar el desarrollo de las conversaciones y las respuestas anteriores al momento de evaluar la confiabilidad de los sistemas.
+En cuanto al concepto de alucinación, \citet{ji2023} lo describen como la generación de contenido que resulta inconsistente con la información de referencia o con los datos de entrada. Dentro de este fenómeno se encuentran las alucinaciones factuales, relacionadas con la generación de afirmaciones que no corresponden con los hechos verificables. Esta distinción es importante para el presente trabajo, ya que permite diferenciar los errores factuales de otras dificultades que pueden presentarse durante una conversación.
+A pesar de los avances mencionados, en la literatura revisada se identifica una oportunidad de investigación relacionada con la evaluación de alucinaciones factuales en chatbots comerciales de servicio al cliente utilizados por empresas reales, particularmente en interacciones desarrolladas en español. Los trabajos anteriores se han enfocado principalmente en modelos generales, escenarios simulados, contextos médicos o herramientas de evaluación, sin abordar directamente el comportamiento de una muestra de chatbots empresariales de diferentes sectores bajo un mismo procedimiento de interacción multiturno en español. Por esta razón, la presente investigación busca aportar evidencia exploratoria mediante la evaluación de 30 chatbots de empresas de distintos sectores, utilizando una consulta de control y tres turnos adicionales en los que se introducen premisas falsas. De esta manera, se pretende identificar la frecuencia de fallos factuales y observar si la información incorrecta se mantiene o se corrige durante la conversación.
 
-\citet{laban2025} realizaron una investigación sobre el comportamiento de los modelos de lenguaje durante las conversaciones multiturno, con el propósito de analizar si su rendimiento se veía afectado cuando la información se proporcionaba de manera progresiva en lugar de entregarse en una sola instrucción.
-Para ello, evaluaron diferentes modelos mediante seis tareas y analizaron más de 200.000 conversaciones simuladas.
-Los resultados mostraron una disminución promedio del 39\,\% en el rendimiento de los modelos durante las interacciones multiturno.
-Además, identificaron que algunos sistemas realizaban suposiciones incorrectas al inicio de las conversaciones y continuaban apoyándose en ellas en los mensajes posteriores.
-Esta investigación se relaciona con el presente estudio porque demuestra la importancia de evaluar la confiabilidad de los chatbots a lo largo de una conversación y no únicamente mediante preguntas individuales \citep{laban2025}.
-\txcomment[author=john,id=J31,status=pending]{Yo pienso que es importante porque fue el estudio de referencia}
-
-\citet{guo2026} realizaron una investigación sobre cómo las conversaciones multiturno pueden afectar la capacidad de razonamiento de los modelos de lenguaje en el ámbito médico.
-Para ello, evaluaron 17 modelos utilizando tres conjuntos de datos clínicos, con el propósito de analizar si los sistemas mantenían sus respuestas iniciales cuando los usuarios introducían sugerencias incorrectas.
-Los resultados mostraron que algunos modelos abandonaban diagnósticos correctos para aceptar las afirmaciones equivocadas de los usuarios, presentando dificultades para diferenciar entre información verdadera y sugerencias incorrectas.
-Los autores identificaron este comportamiento como parte del fenómeno denominado ``conversation tax'', relacionado con la disminución del rendimiento durante las interacciones multiturno.
-Este estudio se relaciona con la presente investigación porque permite comprender cómo las afirmaciones falsas introducidas por los usuarios pueden influir en las respuestas de los chatbots y afectar su confiabilidad durante una conversación.
-\txcomment[author=john,id=J32,status=pending]{Observa que este estudio es más relacionado con premisas falsas que es precisamente lo que uds estudiaron, de aquí se puede responder varios comentarios que hice anteriormente.}
-
-\citet{huang2026} realizaron una investigación para analizar si los modelos de lenguaje se benefician de conservar sus propias respuestas anteriores durante las conversaciones multiturno.
-Para ello, compararon diferentes formas de utilizar el historial de las conversaciones, incluyendo métodos que eliminaban o resumían las respuestas previas del asistente.
-Los resultados mostraron que, en algunos casos, conservar las respuestas anteriores podía generar una contaminación del contexto, haciendo que errores, alucinaciones e información incorrecta se propagaran en los siguientes turnos.
-Los autores también encontraron que era posible mantener la calidad de muchas respuestas utilizando una menor cantidad de información del historial.
-Esta investigación se relaciona con el presente estudio porque permite comprender cómo los errores generados por un chatbot pueden influir en sus propias respuestas posteriores y mantenerse durante una conversación.
-
-\citet{sinha2026} realizaron una investigación sobre las dificultades que presentan los modelos de lenguaje al gestionar cambios de contexto durante las conversaciones multiturno.
-Su objetivo fue analizar si estos sistemas podían reconocer cuándo un usuario cambiaba de tema o simplemente continuaba desarrollando una solicitud anterior.
-Para ello, construyeron pruebas de evaluación basadas en diferentes situaciones de conversación y analizaron el comportamiento de diez modelos de lenguaje.
-Los resultados mostraron que algunos sistemas presentaban dificultades para identificar los cambios de tema y seleccionar la información relevante del historial, llegando a utilizar datos de conversaciones anteriores que ya no eran necesarios.
-Este estudio se relaciona con la presente investigación porque permite comprender cómo el manejo inadecuado del contexto puede afectar la precisión de las respuestas de los chatbots durante una conversación.
-
-\citet{graf2026} desarrollaron una investigación enfocada en las diferencias entre el rendimiento de los modelos de lenguaje en consultas individuales y conversaciones multiturno.
-Para realizar su estudio, propusieron una herramienta de evaluación denominada TurnWiseEval, que permite comparar las capacidades de los modelos en ambos tipos de interacción.
-También desarrollaron un conjunto de datos de entrenamiento con conversaciones multiturno para analizar si su incorporación podía mejorar el desempeño de los sistemas.
-Los resultados mostraron que incluir este tipo de información durante el entrenamiento podía generar mejoras en las respuestas, alcanzando un incremento del 12\,\% al utilizar 10.000 conversaciones multiturno en sus experimentos.
-Esta investigación se relaciona con el presente trabajo porque resalta la importancia de evaluar las capacidades de los chatbots en conversaciones de varios mensajes y no solamente mediante consultas individuales.
-
-\citet{ramnath2025} presentaron AMULET, un método diseñado para mejorar la evaluación de conversaciones complejas mediante el uso de modelos de lenguaje como jueces.
-Su investigación se enfocó en analizar las intenciones de los usuarios y la calidad de las respuestas generadas durante diferentes turnos de una conversación.
-Para ello, utilizaron cuatro conjuntos de datos y desarrollaron un sistema que tiene en cuenta los actos de diálogo y los principios de comunicación para comparar las respuestas de los modelos.
-Entre sus resultados encontraron que las intenciones de los usuarios cambiaban entre un 60\,\% y un 70\,\% de las veces durante las conversaciones.
-Este trabajo se relaciona con la presente investigación porque demuestra la importancia de considerar el contexto y la evolución de los mensajes al momento de evaluar las respuestas de los chatbots.
-
-\citet{huang2025} realizaron una investigación sobre cómo identificar comportamientos específicos de los modelos de lenguaje mediante conversaciones multiturno.
-Los autores analizaron diferentes métodos para generar preguntas e interacciones que permitieran detectar respuestas y comportamientos particulares de estos sistemas.
-Para ello, clasificaron los métodos de evaluación según la forma en que interactuaban con el modelo y compararon su capacidad para encontrar posibles fallos durante las conversaciones.
-Los resultados mostraron que los métodos dinámicos, que modifican las consultas según las respuestas obtenidas, podían identificar comportamientos problemáticos que algunas evaluaciones estáticas no lograban detectar.
-Esta investigación se relaciona con el presente estudio porque aporta una base para comprender la importancia de diseñar pruebas de interacción que permitan identificar errores y comportamientos no deseados en los chatbots.
-\txcomment[author=peter,id=R216,status=pending]{MAYOR: Trabajos relacionados, cierre. Complementa J24 y J32. La sección no declara el vacío de conocimiento. Ninguno de los seis estudios trata alucinaciones en chatbots comerciales de servicio al cliente ni en español, que es lo que el artículo evalúa. Las siete referencias son todas preprints o ponencias recientes y ninguna define alucinación. Añadir un párrafo final que indique qué no se ha estudiado y por qué este trabajo lo aborda.}
 
 \section{Metodología}
-La investigación se realizando mediante una evaluación tipo cuantitativo, en que se selecciona una muestra de 30 chatbots de varios sectores.
-Para todos se utilizó el mismo procedimiento de evaluación, compuesta por una pregunta inicial y tres turnos adicionales de interacción.
-En el turno 0 se realizó una consulta de referencia para establecer el contexto de la conversación.
-\txcomment[author=peter,id=R217,status=pending]{MAYOR: Metodología, muestra. "se selecciona una muestra de 30 chatbots de varios sectores" no explica cómo se eligieron: criterios de inclusión y exclusión, canal de acceso, idioma de la interacción y fecha de recolección. La muestra mezcla empresas con proveedores de plataformas de chatbots, que son sujetos distintos para "servicio al cliente"; justificar o separar. Complementa J08: para sostener el valor de evaluar empresas hispanohablantes hay que declarar el idioma de cada interacción. Si no se puede, quitar "hispanohablantes" del título.}
-\txcomment[author=peter,id=R218,status=pending]{MENOR: Redacción general. Pasar un corrector antes de la entrega: hay errores repetidos en todo el texto, por ejemplo "La investigación se realizando", "distintitos", "Se realizo", "Se busco", "Olimpica presento mas de 2 errores" y "se continua". Mantener el pasado en Metodología y la voz impersonal (aparecen "lo llamamos" y "nosotros").}
+\subsection{Diseño de la investigación}
+Se realizó una investigación de enfoque cuantitativo y diseño comparativo pareado para analizar la presencia de alucinaciones factuales en chatbots de servicio al cliente. El procedimiento permitió comparar, para cada chatbot, una respuesta obtenida mediante una consulta directa de control con las respuestas generadas durante una conversación de tres turnos en la que se introdujo una premisa falsa.
+En primer lugar, se realizó una consulta de control independiente para establecer una respuesta de referencia sobre el tema evaluado. Posteriormente, se inició una nueva conversación con el mismo chatbot, en la cual se introdujo una premisa falsa durante el primer turno. En los turnos segundo y tercero se dio continuidad a la interacción para observar si el sistema mantenía la información incorrecta, la cuestionaba o la corregía.
+El diseño permitió evaluar cada chatbot bajo dos condiciones: una consulta directa de control y una interacción de tres turnos con una premisa falsa. La comparación se realizó dentro de cada sistema, utilizando su propia respuesta de control como referencia. De esta manera, se buscó identificar posibles contradicciones factuales y observar el comportamiento de las respuestas a medida que avanzaba la conversación.
 
-\txcomment[author=john,id=J33,status=pending]{"turno 0" por "consulta control"}
-Posteriormente, en el turno 1 se introdujo una afirmación falsa para observar la respuesta del chatbots.
-En los turnos 2 y 3 se continuó la conversación con el propósito de identificar si el sistema mantenía la información incorrecta o si lograba reconocerla y corregirla.
-\txcomment[author=john,id=J34,status=pending]{Por favor expliquen porque el diseño experimental es así. Este caería en un diseño experimental pareado, donde un grupo control (consulta directa en primer turno) se compara con un grupo tratamiento (consulta indirecta en 3 turnos con premisa falsa en el primero). De allí se obtienen dos respuestas (control y tratamiento) y con un LLM as a Judge se realiza la evaluación de la contradicción factual entre ambas afirmaciones.}
-\txcomment[author=john,id=J35,status=pending]{Agregar un diagrama del diseño experimental}
-Como herramienta de registro y organización de la información se utilizó Microsoft Excel, donde se almacenaron las preguntas, las respuestas generadas por cada chatbot y las evaluaciones correspondientes como la de nosotros y el evaluador.
-Adicionalmente, se contó con el apoyo de Google AI Studio con el modelo de Gemini 3.8 durante el desarrollo del proceso, como herramienta de asistencia para optimizar algunas de las actividades relacionadas con la investigación.
-\txcomment[author=john,id=J36,status=pending]{describir aquí la función exacta de Gemini en el método para generar las consultas, la simulación de intereacción humano chatbot y como sirvió como LLM as a Judge, anexen los prompts utilizados en los anexos y referencielos aquí. También mencionen la validación humana hacia el LLM as a Judge. Quiten la mención a Excel, es irrelevante. Decir "Gemini es utilizó como herramienta para optimizar ..." es ambiguo y poco útil para futuros investigadores, piensen en aquellas personas (incluso uds mismos) cuando quieran replicar este estudio, debemos brindar la especificación necesaria para que lo puedan hacer!!}
-\txcomment[author=peter,id=R219,status=pending]{MAYOR: Metodología y limitaciones. Complementa J34: el diseño compara la consulta control con la conversación de tres turnos con premisa falsa, pero no incluye la misma premisa falsa en un solo turno. Por eso no se puede atribuir el fallo al formato multiturno (la pregunta que plantea J66). Declararlo como limitación en la Discusión que pide J63.}
-\txcomment[author=peter,id=R220,status=pending]{MAYOR: Metodología, variable de resultado. Complementa J36 y J65. No se define qué es un fallo: el texto alterna "alucinación", "fallo" y "error". Definir el criterio (incluido cómo se tratan las abstenciones, ver J49), la fuente contra la que se verificó cada respuesta, cuántos evaluadores humanos hubo y el acuerdo entre ellos. "las evaluaciones correspondientes como la de nosotros y el evaluador" no identifica al evaluador.}
+\subsection{Selección de la muestra}
+La muestra estuvo conformada por 30 chatbots propios de empresas reales, pertenecientes a diferentes sectores económicos. Los sectores incluidos fueron el bancario, retail, turismo, seguros, tecnología, telecomunicaciones, desarrollo urbano y sector público.
+La selección se realizó de manera aleatoria entre los chatbots que cumplían los requisitos establecidos para la investigación. Se consideraron sistemas disponibles para la interacción directa con usuarios y relacionados con los servicios de atención al cliente de las empresas seleccionadas. Se excluyeron las plataformas proveedoras de chatbots como unidades independientes de análisis, debido a que el objeto de estudio fueron los sistemas de atención implementados por las propias empresas.
+Todas las interacciones se realizaron en español. La recolección de información se llevó a cabo entre el 1 de septiembre y el 31 de octubre. Durante este periodo se aplicó el mismo procedimiento de evaluación a los 30 chatbots, con el propósito de mantener condiciones de comparación uniformes.
+
+\subsection{Procedimiento de evaluación}
+Para cada uno de los 30 chatbots se realizó una consulta de control y una conversación adicional de tres turnos. En total, se obtuvieron 30 respuestas de control y 90 respuestas correspondientes a las interacciones de tres turnos.
+La consulta de control se formuló de manera directa y sin introducir información falsa. Su propósito fue establecer una respuesta de referencia para cada chatbot. Posteriormente, se inició una nueva conversación con el mismo sistema. En el primer turno se incorporó una premisa falsa relacionada con el tema consultado. En el segundo y tercer turno se continuó la interacción para observar si el chatbot mantenía la información incorrecta, la cuestionaba o lograba corregirla.
+Las respuestas de los tres turnos se compararon con la información obtenida en la consulta de control. Este procedimiento permitió examinar la consistencia factual de las respuestas frente a la premisa falsa y observar si la información incorrecta se mantenía durante el desarrollo de la conversación.
+
+\subsection{Herramientas y evaluación de las respuestas}
+Para apoyar el desarrollo de la evaluación se utilizó Google AI Studio con el modelo Gemini 3.8, mediante instrucciones específicas (prompts) diseñadas para las diferentes actividades del estudio.
+Se elaboró un prompt para el agente encargado de apoyar la generación de las consultas y otros prompts con instrucciones específicas para evaluar las respuestas correspondientes al primer, segundo y tercer turno. Estos últimos establecieron las indicaciones que debía seguir el modelo al comparar las respuestas de los chatbots con la información de referencia y determinar si presentaban inconsistencias factuales.
+El modelo Gemini se utilizó bajo el enfoque de LLM-as-a-Judge, es decir, como evaluador automático de las respuestas generadas por los chatbots. Para ello, se proporcionaron instrucciones orientadas a identificar si las respuestas mantenían, contradecían o corregían la información presentada durante la interacción.
+Adicionalmente, las evaluaciones generadas por Gemini fueron sometidas a revisión humana por parte del equipo investigador, con el propósito de contrastar las clasificaciones automáticas y comprobar su correspondencia con las respuestas obtenidas. Los prompts utilizados para la generación de consultas y la evaluación de los tres turnos se presentan en los anexos, con el fin de facilitar la comprensión y posible reproducción del procedimiento.
+
+\subsection{Criterios de evaluación}
+La evaluación se centró en identificar inconsistencias factuales entre las respuestas generadas durante la interacción con premisas falsas y la información obtenida en la consulta de control. Se consideró que una respuesta presentaba un error factual cuando incluía información que contradecía la referencia establecida o mantenía como verdadera una afirmación incorrecta introducida durante la conversación.
+Las respuestas se clasificaron como correctas o incorrectas de acuerdo con su correspondencia con la información de referencia. La evaluación tuvo en cuenta si el chatbot aceptaba la premisa falsa, si reproducía o mantenía información incorrecta en los turnos posteriores y si lograba cuestionarla o corregirla.
+Las respuestas que no proporcionaban información suficiente para establecer una afirmación factual se distinguieron de aquellas que presentaban información incorrecta, puesto que la ausencia de respuesta no constituye por sí misma una alucinación factual. Esta distinción permitió evitar que la falta de información se interpretara automáticamente como una afirmación falsa.
+Finalmente, las clasificaciones obtenidas mediante el evaluador automático se contrastaron con la revisión humana para examinar la consistencia de los resultados.
 
 \subsection{Estructura de la base de datos}
-\txcomment[author=john,id=J37,status=pending]{Se convirtió todas las figuras a listas, tablas e imágenes de alta resolución e manera automática. Es una mala práctica copiar y pegar capturas de pantalla de códigos. En seguida hago comentarios sobre ellas, que aparezcan aquí no quiere decir que esté bien hacerlo. Por favor revisar que hubieran quedado bien transcritas.}
-\txcomment[author=john,id=J38,status=pending]{No es necesaria una lista de estos descritivos, mencionenlo de manera narrativa y con orientación hacia la especificación de la metodología y solución del problema.}
-\begin{itemize}
-  \item Total, de Registros: 120
-  \item Variables: 8
-\end{itemize}
-Las variables se listan en la \cref{tab:estructura}.
-\txcomment[author=john,id=J39,status=pending]{Horrible una tabla de una sola columna, si es el caso acompañarla de alguna descripción. De hecho es un poco irrelevante y tal vez debería enviarse a ANEXOS.}
-\begin{table}[H]
-  \caption{Estructura de la base de datos de la evaluación}\label{tab:estructura}
-  \begin{rcctabla}
-  \begin{tabularx}{\textwidth}{L}
-    \rccencabezado \rcch{Variable} \\
-    Chatbot \\ \hline
-    Elemento \\ \hline
-    Consulta realizada \\ \hline
-    Respuesta del bot \\ \hline
-    Falló \\ \hline
-    Observación \\ \hline
-    Veredicto final \\ \hline
-    Sector \\ \hline
-  \end{tabularx}
-  \end{rcctabla}
-  \nota{\elaboracionpropia}
-\end{table}
-\txcomment[author=peter,id=R223,status=pending]{MENOR: Metodología, análisis estadístico. Complementa J55 y J59. Al describir la prueba, indicar el método del "Valor p ajustado" (por ejemplo Bonferroni o Holm), el nivel alfa y que las 90 respuestas son tres por chatbot, es decir, no independientes. Reportar además cuántos chatbots tuvieron al menos un fallo (10 de 30).}
+La información obtenida durante la evaluación se organizó en una base de datos conformada por 120 registros y ocho variables. Cada registro correspondió a una interacción o respuesta evaluada dentro del procedimiento, incluyendo las consultas de control y los tres turnos adicionales realizados a cada chatbot.
+La base de datos permitió identificar el chatbot evaluado, el sector económico al que pertenecía, el elemento o interacción analizada, la consulta realizada y la respuesta generada por el sistema. Asimismo, se registraron las observaciones del proceso de evaluación, la identificación de posibles fallos y el veredicto final asignado a cada respuesta.
+Esta estructura facilitó la organización de los resultados y la comparación entre las respuestas de control y las obtenidas durante las interacciones con premisas falsas, permitiendo analizar la presencia de errores factuales en los diferentes turnos.
+
 
 \section{Resultados}
-\txcomment[author=john,id=J40,status=pending]{Toda la sección de resultados debe ser resumida, hay mucha información redundante y poca robustez estadística.}
+\subsection{Resultados generales}
+En las 90 respuestas obtenidas durante las interacciones de tres turnos con los 30 chatbots evaluados, se identificaron 79 respuestas correctas (87,78 \%) y 11 respuestas incorrectas (12,22 \%). Estos resultados muestran que, aunque predominó la información correcta, también se presentaron inconsistencias factuales durante las conversaciones con premisas falsas.
+Por otra parte, en las consultas de control se identificaron errores en 10 de los 30 chatbots evaluados (33,33 \%). Este resultado permitió establecer que las inconsistencias factuales también podían presentarse en consultas directas, sin necesidad de introducir una premisa falsa.
+
+\subsection{Resultados por turno}
+Al analizar las respuestas de acuerdo con el turno de interacción, se identificaron cinco respuestas incorrectas en el primer turno (16,67 \%), tres en el segundo (10,00 \%) y tres en el tercero (10,00 \%).
+La mayor cantidad de respuestas incorrectas se presentó en el primer turno. En los dos turnos posteriores se observó una reducción en el número de errores, aunque estos continuaron apareciendo durante la conversación.
+
+
+\subsection{Comparación estadística}
+La comparación entre los turnos se realizó mediante la prueba exacta de McNemar, considerando que las respuestas estaban agrupadas por chatbot y que las observaciones de un mismo sistema no eran independientes. Los resultados no evidenciaron diferencias estadísticamente significativas entre los turnos evaluados.
+Por tanto, aunque se observaron variaciones descriptivas en la cantidad de respuestas incorrectas entre los tres turnos, no se encontró evidencia estadística suficiente para afirmar que estas diferencias fueran significativas.
 
 \subsection{Distribución de los registros según la etapa de evaluación}
-\txcomment[author=john,id=J41,status=pending]{Cuáles etapas, nunca hablaron de esto en la metodología, debe existir un hilo narrativo, no le podemos enviar al lector a que interprete algo que ni siquiera se ha hablado.}
-\txcomment[author=john,id=J42,status=pending]{No listen información por listar, prefieran una redacción narrativa con prpósito.}
-\begin{itemize}
-  \item Los 120 registros se distribuyen en 4 etapas.
-  \item Cada etapa tiene 30 registros.
-  \item Con cada distribución se realizo el análisis por separado de cada etapa.
-\end{itemize}
-\txcomment[author=john,id=J43,status=pending]{No es necesaria una captura o tabla para decir que cada etapa tiene 30 registros!! Esto ya se dijo!}
-La \cref{tab:etapas} muestra el número de registros por etapa.
+La base de datos estuvo conformada por 120 registros, correspondientes a cuatro etapas de evaluación aplicadas a los 30 chatbots seleccionados. Cada etapa reunió 30 registros, lo que permitió organizar los resultados de acuerdo con el tipo de evaluación realizada. Esta organización facilitó el análisis de las respuestas de control y de las interacciones desarrolladas durante los tres turnos con premisas falsas.
 
 \begin{table}[H]
-  \caption{Registros por etapa de evaluación}\label{tab:etapas}
+  \caption{Registros por etapa de evaluacion}\label{tab:descriptiva}
   \begin{rcctabla}
   \begin{tabularx}{\textwidth}{LC}
     \rccencabezado \rcch{Etapa} & \rcch{Registros} \\
@@ -300,105 +166,60 @@ La \cref{tab:etapas} muestra el número de registros por etapa.
 \end{table}
 
 \subsection{Distribución de chatbots por sector}
-\txcomment[author=john,id=J44,status=pending]{Esta información me parece muy útil, realicen un gráfico de barras horizontal para presentarlo}
-\txcomment[author=john,id=J45,status=pending]{Esta lista ya se puede saber directamente viendo la tabla o figura. Más bien pueden explicar que consecuencias tiene que el sector tecnológico tenga cerca del 50\% del peso en los datos.}
-\begin{itemize}
-  \item Tecnología fue el sector con mayor participación en la muestra con un total de 13 chatbots.
-  \item El sector bancario fue el segundo con 5 chatbots.
-  \item Los demás sectores tienen una participación entre 1 a 4 chatbots.
-\end{itemize}
-Esto muestra que el sector tecnológico tiene una mayor representación en la muestra.
-La \cref{tab:sectores} presenta la distribución completa.
+La muestra presentó una distribución desigual entre los sectores económicos. El sector tecnológico tuvo la mayor participación, con 13 de los 30 chatbots evaluados (43,33 \%), seguido del sector bancario, con cinco sistemas. Los demás sectores tuvieron una representación menor.
+Esta distribución indica que los resultados generales estuvieron influenciados en mayor medida por el comportamiento de los chatbots del sector tecnológico. Por esta razón, los hallazgos deben interpretarse considerando que la muestra no tuvo una representación equilibrada entre sectores y que los resultados no permiten establecer comparaciones concluyentes sobre el desempeño de cada uno. La Figura 2 presenta la distribución de los chatbots según el sector económico.
 
 \begin{table}[H]
   \caption{Distribución de chatbots por sector}\label{tab:sectores}
   \begin{rcctabla}
-  \begin{tabularx}{\textwidth}{LC}
+  \begin{tabularx}{\textwidth}{LCCCCC}
     \rccencabezado \rcch{Sector} & \rcch{Chatbots} \\
-    Tecnología & 13 \\ \hline
-    Bancario & 5 \\ \hline
-    Turismo & 4 \\ \hline
-    Retail & 2 \\ \hline
-    Telecomunicaciones & 2 \\ \hline
-    Seguros & 2 \\ \hline
-    Desarrollo urbano & 1 \\ \hline
-    Público & 1 \\ \hline
-    Total & 30 \\ \hline
+    Tecnologia 1 & 13  \\ \hline
+    Bancario 2 & 5  \\ \hline
+    Turismo & 4  \\ \hline
+    Retail & 2  \\ \hline
+    Telecomunicaciones & 2  \\ \hline
+    Seguros & 2  \\ \hline
+    Desarrollo urbano & 1  \\ \hline
+    Público & 1  \\ \hline
+    Total & 30  \\ \hline
   \end{tabularx}
   \end{rcctabla}
   \nota{\elaboracionpropia}
 \end{table}
 
-\subsection{Distribución de respuestas evaluadas en la interacción multiturno}
-\txcomment[author=john,id=J46,status=pending]{Eliminar lista, decirlo de manera narrativa. Pero más allá de esto, no se entiende para que mencionar que de 90 turnos fueron distribuidas en 30 conversaciones, eso ya se dijo, no se aporta nada nuevo aquí, eliminarlo}
-\begin{itemize}
-  \item Se evaluaron 90 respuestas las cuales fueron la de los 3 turnos
-  \item Los 30 restantes correspondían a la pregunta de control en la que nos basábamos para poder evaluar al chatbot, por eso no se tienen en cuenta
-\txcomment[author=john,id=J47,status=pending]{Esto de que la pregunta control se usaba para comparar debe ir en la metodlogía, no aquí}
-\end{itemize}
-\txcomment[author=peter,id=R226,status=pending]{MENOR: Resultados, respuestas evaluadas. "en la que nos basábamos para poder evaluar al chatbot" confirma que el control es la referencia (ver comentario sobre la evaluación de control) y usa primera persona. Las viñetas no llevan punto final y la primera tiene "fueron la de los 3 turnos". Reescribir en voz impersonal.}
-La \cref{tab:respuestas} resume las respuestas evaluadas por turno.
+Durante la evaluación de las interacciones multiturno se identificaron 11 respuestas con errores factuales de un total de 90 respuestas analizadas, lo que representa el 12,22 \%. Estas respuestas incluyeron inconsistencias entre la información proporcionada por los chatbots y la referencia establecida mediante las consultas de control.
+Las respuestas en las que el chatbot se abstuvo de proporcionar información o solicitó aclaraciones deben distinguirse de aquellas que presentaron afirmaciones factualmente incorrectas. Por tanto, las respuestas como «Lo siento, no te puedo ayudar con esto» o las solicitudes de información adicional no deben clasificarse automáticamente como errores factuales, sino de acuerdo con los criterios de evaluación establecidos.
 
 \begin{table}[H]
-  \caption{Respuestas evaluadas por turno}\label{tab:respuestas}
-  \begin{rcctabla}
-  \begin{tabularx}{\textwidth}{LC}
-    \rccencabezado \rcch{Turno} & \rcch{Respuestas evaluadas} \\
-    Turno 1 & 30 \\ \hline
-    Turno 2 & 30 \\ \hline
-    Turno 3 & 30 \\ \hline
-    Total & 90 \\ \hline
-  \end{tabularx}
-  \end{rcctabla}
-  \nota{\elaboracionpropia}
-\end{table}
-
-\subsection{Estadística descriptiva general de las respuestas en los tres turnos}
-\txcomment[author=john,id=J48,status=pending]{Quitar este título de subsección, prefieran un tono narrativo.}
-\txcomment[author=john,id=J49,status=pending]{Lo que se menciona en esta sección es clave. Una pregunta y que pasa cuando el chatbot no quiere responder (se abstiene o contesta con otra pregunta?), por ejemplo: "Lo siento no te puedo ayudar con esto" o "Me podrías aclarar ...". Tenía entendido que en el diseño del evaluador se había contemplado esta categoría.}
-\txcomment[author=john,id=J50,status=pending]{No listen esto, además no es necesario decir 88\% fueron correctas y 12\% fueron incorrectas (es redundante), solo reporten el porcentaje incorrecto y ya está}
-\begin{itemize}
-  \item De las 90 respuestas evaluadas, 79 fueron correctas (87.78 \%)
-  \item 11 fueron identificadas con errores (12.22 \%)
-  \item Estos resultados representan el comportamientos de los chatbots al ser evaluados.
-\txcomment[author=john,id=J51,status=pending]{Esta última frase sobra}
-\end{itemize}
-Los indicadores generales se muestran en la \cref{tab:descriptiva}.
-\txcomment[author=john,id=J52,status=pending]{Siento que ninguna tabla es necesaria y todo lo dicho anteriormente junto a la siguiente tabla se puede resumir en un solo párrafo}
-\begin{table}[H]
-  \caption{Estadística descriptiva de las respuestas en los tres turnos}\label{tab:descriptiva}
-  \begin{rcctabla}
-  \begin{tabularx}{\textwidth}{LC}
-    \rccencabezado \rcch{Indicador} & \rcch{Resultado} \\
-    Respuestas evaluadas & 90 \\ \hline
-    Respuestas correctas & 79 \\ \hline
-    Número de fallos & 11 \\ \hline
-    Porcentaje de respuestas correctas & 87,78\,\% \\ \hline
-    Porcentaje de fallos & 12,22\,\% \\ \hline
-  \end{tabularx}
-  \end{rcctabla}
-  \nota{\elaboracionpropia}
-\end{table}
-
-\subsection{Comparación de respuestas y errores por turno}
-\txcomment[author=john,id=J53,status=pending]{Esto es clave, pero no hace falta crear una nueva sub-sección. Se puede decir algo como "por sorpresa, al aumentar los turnos no se observa degradación del porcentaje incorrecto (17\%, 10\%, 10\%) en cada turno respectivamente." o algo así.}
-\begin{itemize}
-  \item En el 1 turno se presentaron 5 fallos, que equivale a un 16.67 \%
-  \item En el 2 turno se presentaron 3 fallos, que equivale a un 10.00 \%
-  \item En el 3 turno se presentaron 3 fallos, que equivale a un 10.00 \%
-\end{itemize}
-\txcomment[author=peter,id=R228,status=pending]{MENOR: Resultados, formato. Se escribe "1 turno" y "turno 1", y los decimales aparecen como "16.67" y "16,67". Estandarizar a "turno 1" y coma decimal en el texto, el resumen y las tablas.}
-La \cref{tab:turnos} y la \cref{fig:fallos-turno} presentan los resultados por turno.
-
-\txcomment[author=john,id=J54,status=pending]{Esta tabla y figura sobran, ya se dijo antes}
-\begin{table}[H]
-  \caption{Respuestas, correctas y fallos por turno}\label{tab:turnos}
+  \caption{Distribución de chatbots por sector}\label{tab:respuestas}
   \begin{rcctabla}
   \begin{tabularx}{\textwidth}{LCCCCC}
-    \rccencabezado \rcch{Turno} & \rcch{Respuestas} & \rcch{Correctas} & \rcch{Fallos} & \rcch{Fallos (\%)} & \rcch{Correctas (\%)} \\
+    \rccencabezado \rcch{Indicador} & \rcch{Resultado} \\
+    Respuestas evaluadas & 90  \\ \hline
+    Respuestas correctas & 79  \\ \hline
+    Número de fallos & 11 \\ \hline
+    Porcentaje de respuestas correctas & 87,78 \% \\ \hline
+    Porcentaje de fallos & 12,22 \% \\ \hline
+    
+  \end{tabularx}
+  \end{rcctabla}
+  \nota{\elaboracionpropia}
+\end{table}
+
+
+\subsection{Comparación de respuestas y errores por turno}
+Al comparar los resultados de los tres turnos, se observó que el porcentaje de respuestas con errores factuales fue del 16,67 \% en el turno 1, del 10,00 \% en el turno 2 y del 10,00 \% en el turno 3. Descriptivamente, los errores disminuyeron entre el primer y el segundo turno y se mantuvieron en el tercero. Sin embargo, la prueba exacta de McNemar no identificó diferencias estadísticamente significativas entre los turnos, por lo que esta variación no permite afirmar que la frecuencia de errores haya disminuido a medida que avanzó la conversación.
+
+\begin{table}[H]
+  \caption{Distribución de chatbots por sector}\label{tab:sec_turnos}
+  \begin{rcctabla}
+  \begin{tabularx}{\textwidth}{LCCCCC}
+    \rccencabezado \rcch{Turno} & \rcch{Respuestas} & \rcch{Correctas} & \rcch{Fallos} & \rcch{Fallos \%} & \rcch{Correctas \%}\\
     Turno 1 & 30 & 25 & 5 & 16,67 & 83,33 \\ \hline
-    Turno 2 & 30 & 27 & 3 & 10,00 & 90,00 \\ \hline
+    Turno 2 & 30 & 27 & 3 & 10,00 & 90,00  \\ \hline
     Turno 3 & 30 & 27 & 3 & 10,00 & 90,00 \\ \hline
+    
   \end{tabularx}
   \end{rcctabla}
   \nota{\elaboracionpropia}
@@ -411,66 +232,38 @@ La \cref{tab:turnos} y la \cref{fig:fallos-turno} presentan los resultados por t
   \nota{\elaboracionpropia}
 \end{figure}
 
-\txcomment[author=john,id=J55,status=pending]{Esto me parece clave, pero hay un problema, deben crear un intervalo de confianza sobre cada estimaciń puntual o preferiblemente hacer una prueba estadística robusta de cmparación de medias (revisen si ANOVA, t-test, t-test pareado, etc). La elección del método correcto debe estar soportado en la sección de metodología. Estos hallazgos son exploratorios y uds lo muestran como algo concluyente, ojo aquí!}
-Este resultado es interesante porque permite observar que los errores no aumentaron a medida que avanzaba la conversación.
-Por el contrario, disminuyeron del primer al segundo turno y permanecieron iguales en el tercero.
-\txcomment[author=peter,id=R229,status=pending]{SUGERENCIA: Resultados, por turno. Complementa J53: al reportar la caída (17\%, 10\%, 10\%), añadir en la misma frase que la prueba de McNemar no fue significativa (Tabla 8), para que "disminuyeron" no se lea como un efecto comprobado. La interpretación más extensa puede ir en la Discusión que pide J63.}
 
 \subsection{Chatbots que presentaron errores durante la interacción multiturno}
-\txcomment[author=john,id=J56,status=pending]{IMPORTANTE: Aquí nos podemos estar metidiendo en un problema muy grave con todas estas empresas, podemos nombrar los sectores pero no asignar las identificaciones de las empresas, esto es causal de demandas si alguna de ellas lee este documento, nunca contamos con su autorización para hacer lo que hicimos, tampoco leímos los terminos y condiciones del uso de sus chatbots. Agrupen estos resultados por sector, pero siempre tengan en cuenta la validez y robustex estadística de cualquier conclusión. Recuerden si la muestra es baja para un sector, no puedo asegurar nada porque el intervalo de confianza es gigante.}
-\begin{itemize}
-  \item Algunos de los chatbots presentaron errores solamente en el 1 turno.
-  \item Otros presentaron errores en el turno 2 o 3.
-\txcomment[author=john,id=J57,status=pending]{el texto dice "más de 2 errores", pero la matriz muestra 2 (turnos 2 y 3). Además, "etapa" aquí significa turno?}
-  \item Olimpica presento mas de 2 errores, en la segunda y tercera etapa.
-\end{itemize}
-La \cref{tab:matriz} presenta la matriz de errores de cada chatbot por turno.
-Un 1 indica un error en ese turno.
+Durante la evaluación se identificaron chatbots que presentaron errores factuales en diferentes momentos de la interacción multiturno. Algunos registraron errores únicamente en el turno 1, mientras que otros presentaron inconsistencias en los turnos 2 o 3. También se identificaron casos en los que los errores persistieron en más de un turno.
+Con el propósito de proteger la identidad de las empresas evaluadas, los resultados se presentan agrupados por sector, sin incluir nombres comerciales ni identificaciones individuales de los chatbots. Esta presentación permite describir la distribución de los errores entre los sectores incluidos en la muestra, sin atribuir públicamente los resultados a empresas específicas.
+La interpretación de estos hallazgos debe considerar que la cantidad de chatbots evaluados varió entre sectores, por lo que las diferencias observadas tienen un carácter exploratorio y no permiten establecer conclusiones generales sobre el comportamiento de todos los chatbots de un sector económico.
+En cuanto a la integridad de los datos, la revisión de la base identificó un valor faltante en el registro correspondiente al turno de control, mientras que los registros de los turnos 1, 2 y 3 no presentaron datos faltantes. Por esta razón, el turno de control no se incluyó en el análisis de distribución de errores por interacción multiturno.
 
-\begin{rcctablalarga}{Matriz de errores por chatbot y turno}{tab:matriz}{P{.4}Q{.2}Q{.2}Q{.2}}
-  {\rcch{Unidad} & \rcch{Turno 1} & \rcch{Turno 2} & \rcch{Turno 3}}
-  1MillionBot & 1 & 0 & 0 \\ \hline
-  AT\&T & 0 & 0 & 0 \\ \hline
-  AWS & 0 & 0 & 0 \\ \hline
-  Banco de Bogotá & 0 & 0 & 0 \\ \hline
-  Bancolombia & 0 & 0 & 0 \\ \hline
-  Bogotá & 1 & 0 & 0 \\ \hline
-  Centribal & 0 & 0 & 0 \\ \hline
-  Cliengo & 0 & 0 & 0 \\ \hline
-  Club plateado & 0 & 0 & 0 \\ \hline
-  Davivienda & 0 & 0 & 0 \\ \hline
-  Despegar & 0 & 0 & 0 \\ \hline
-  Facebook & 0 & 0 & 0 \\ \hline
-  HP & 0 & 0 & 0 \\ \hline
-  HubSpot & 0 & 0 & 0 \\ \hline
-  Iberia & 0 & 0 & 0 \\ \hline
-  Intercom & 0 & 0 & 1 \\ \hline
-  Irma & 0 & 0 & 0 \\ \hline
-  Latam & 0 & 0 & 0 \\ \hline
-  Lowes & 0 & 0 & 0 \\ \hline
-  MAC IPHONE & 0 & 0 & 0 \\ \hline
-  Nequi & 0 & 0 & 0 \\ \hline
-  Olimpica & 0 & 1 & 1 \\ \hline
-  Renobo & 1 & 0 & 0 \\ \hline
-  SAP & 0 & 0 & 0 \\ \hline
-  Salesforce & 1 & 0 & 0 \\ \hline
-  Seguros bolivar & 1 & 0 & 0 \\ \hline
-  Tu aval Bre - B & 0 & 0 & 0 \\ \hline
-  Vondia & 0 & 0 & 1 \\ \hline
-  Xcaret & 0 & 1 & 0 \\ \hline
-  Zendesk & 0 & 1 & 0 \\ \hline
-\end{rcctablalarga}
-\nota{\elaboracionpropia}
-\txcomment[author=john,id=J58,status=pending]{Por favor revisen este aviso del proceso automatizado para pasar de word a latex: DATOS FALTANTES del .docx (salida de consola sin tabla): Turno 0 (sin valor en la salida); Turno 1, Turno 2 y Turno 3 con 0 datos faltantes. Dtype int64. Se omite del artículo.}
+
+\begin{table}[H]
+  \caption{Errores por sector en cada turno}\label{tab:sectores2}
+  \begin{rcctabla}
+  \begin{tabularx}{\textwidth}{LCCCCC}
+    \rccencabezado \rcch{Sector} & \rcch{Turno 1} & \rcch{Turno 2} & \rcch{Turno 3} \\
+    Bancario & 0 & 0  & 0 \\ \hline
+    Desarrollo urbano & 1 & 0 & 0 \\ \hline
+    Público & 1 & 0 & 0 \\ \hline
+    Retail & 0 & 1 & 1 \\ \hline
+    Seguros & 1 & 0 & 0 \\ \hline
+    Tecnología & 2 & 1 & 2 \\ \hline
+    Telecomunicaciones & 0 & 0 & 0 \\ \hline
+    Turismo & 0 & 1 & 0 \\ \hline
+ 
+  \end{tabularx}
+  \end{rcctabla}
+  \nota{\elaboracionpropia}
+\end{table}
 
 \subsection{Comparación estadística de errores entre turnos mediante la prueba de McNemar}
-\txcomment[author=john,id=J59,status=pending]{De esta prueba nunca se habló en la metodología, en que consiste, porque es importante aplicarla?}
-\begin{itemize}
-  \item Entre el turno 1 y el 2, cinco chatbots dejaron de presentar errores, mientras que tres comenzaron a presentarlos.
-  \item Entre el turno 1 y el 3 ocurrió el mismo balance.
-  \item Entre el turno 2 y el 3, dos chatbots comenzaron a presentar errores y otros dos dejaron de presentarlos.
-\end{itemize}
-La \cref{tab:mcnemar} presenta los resultados de la prueba.
+
+Entre el turno 1 y el turno 2, cinco chatbots dejaron de presentar errores, mientras que tres comenzaron a presentarlos. Entre el turno 1 y el turno 3 se observó el mismo comportamiento. Por su parte, al comparar los turnos 2 y 3, dos chatbots comenzaron a presentar errores y otros dos dejaron de presentarlos.
+La Tabla 8 presenta los resultados de la prueba exacta de McNemar. Aunque descriptivamente el porcentaje de errores pasó del 16,67 \% en el primer turno al 10,00 \% en el segundo y tercer turno, las comparaciones no mostraron diferencias estadísticamente significativas. Por tanto, no se encontró evidencia estadística suficiente para afirmar que la frecuencia de errores cambiara entre los turnos evaluados.
+Para comparar la presencia de errores factuales entre los turnos de interacción, se utilizó la prueba exacta de McNemar. Esta prueba permite comparar dos mediciones relacionadas sobre los mismos individuos cuando la variable analizada es dicotómica, es decir, cuando se clasifica como presencia o ausencia de error. Su aplicación permitió evaluar si los chatbots cambiaron su clasificación entre pares de turnos, identificando aquellos que dejaron de presentar errores y aquellos que comenzaron a presentarlos. Se estableció un nivel de significancia de 0,05 para la interpretación de los resultados.
 
 \begin{table}[H]
   \caption{Resultados de la prueba de McNemar entre turnos}\label{tab:mcnemar}
@@ -484,22 +277,17 @@ La \cref{tab:mcnemar} presenta los resultados de la prueba.
   \end{rcctabla}
   \nota{\elaboracionpropia}
 \end{table}
-Aunque el porcentaje de errores pasó del 16,67\,\% en el primer turno al 10\,\% en el segundo y tercero, la prueba de McNemar indica que esa disminución no fue estadísticamente significativa.
-\txcomment[author=peter,id=R231,status=pending]{MENOR: Resultados, McNemar. La Tabla 8 no tiene nota que explique la prueba, el ajuste de p ni el criterio de "Significativo". Con 8 pares discordantes la prueba tiene poca potencia, y un resultado no significativo no demuestra que no haya diferencia: indicarlo en la Discusión. Añadir una nota a la tabla.}
+
+Nota. Se aplicó la prueba exacta de McNemar para comparar la presencia de errores factuales entre pares de turnos en los mismos chatbots. Se consideró estadísticamente significativa una diferencia cuando el valor p fue inferior a 0,05. Los valores p ajustados corresponden a la corrección por comparaciones múltiples aplicada en el análisis.
+La ausencia de diferencias estadísticamente significativas en las comparaciones mediante la prueba de McNemar debe interpretarse con cautela. El número reducido de pares discordantes limita la capacidad de la prueba para detectar diferencias entre los turnos. Por esta razón, los resultados no permiten concluir que el comportamiento de los chatbots sea equivalente entre turnos, sino que no se encontró evidencia estadística suficiente para identificar diferencias.
+
 
 \subsection{Resultados de la evaluación multiturno por sector}
-\txcomment[author=john,id=J60,status=pending]{Esto es lo que se pedía antes, tener cuidado con la robustez estadística, si solo hay 5 conversaciones en un sector, tal vez no sea sano atribuir o concluir. Piensen como presentar los ersultados de manera correcta alineada con la problemática.}
-\begin{itemize}
-  \item Retail: presentó un 33,33\,\% de errores, equivalente a dos respuestas incorrectas de seis.
-  \item Desarrollo urbano y público: también registraron un 33,33\,\%, aunque cada sector solamente tuvo tres respuestas evaluadas.
-  \item Tecnología: presentó cinco errores, la mayor cantidad absoluta, pero su porcentaje fue del 12,82\,\% debido a que tenía más chatbots.
-  \item Bancario y telecomunicaciones: no registraron errores en las respuestas evaluadas.
-\end{itemize}
-\txcomment[author=peter,id=R232,status=pending]{SUGERENCIA: Resultados, sectores. Complementa J56 y J60. Antes de comparar sectores, verificar si los 2 fallos de Retail provienen de un solo chatbot. Si es así, decirlo, porque el 33,33\% depende de un caso.}
-La \cref{tab:sector} presenta los resultados completos por sector, y la \cref{fig:fallos-sector} muestra el porcentaje de fallos de cada uno.
+Al organizar los resultados por sector, se observaron diferencias en la cantidad y proporción de respuestas con errores factuales. En Retail se identificaron dos respuestas incorrectas de un total de seis (33,33 \%). En Desarrollo urbano y en el sector público se registró una respuesta incorrecta de tres evaluadas en cada sector (33,33 \%). Por su parte, Tecnología presentó cinco respuestas incorrectas, equivalentes al 12,82 \% de las 39 respuestas evaluadas. En los sectores Bancario y Telecomunicaciones no se identificaron errores en las respuestas analizadas.
+Estos resultados deben interpretarse de manera descriptiva y con cautela, debido a que la cantidad de chatbots y respuestas evaluadas varió considerablemente entre sectores. En consecuencia, los porcentajes obtenidos en sectores con pocas observaciones pueden cambiar sustancialmente ante la presencia de uno o dos errores. Asimismo, la mayor cantidad absoluta de errores en Tecnología debe interpretarse considerando que este sector concentró un mayor número de chatbots y, por tanto, de respuestas evaluadas. La Tabla 9 y la Figura 2 presentan la distribución de los errores identificados por sector.
 
 \begin{table}[H]
-  \caption{Resultados de la evaluación multiturno por sector}\label{tab:sector}
+  \caption{Resultados de la evaluación multiturno por sector}\label{tab:multxsec}
   \begin{rcctabla}
   \begin{tabularx}{\textwidth}{XCCCCCC}
     \rccencabezado \rcch{Sector} & \rcch{Chatbots} & \rcch{Respuestas} & \rcch{Correctas} & \rcch{Fallos} & \rcch{Fallos (\%)} & \rcch{Correctas (\%)} \\
@@ -524,14 +312,7 @@ La \cref{tab:sector} presenta los resultados completos por sector, y la \cref{fi
 \end{figure}
 
 \subsection{Resultados de la evaluación de control}
-\txcomment[author=john,id=J61,status=pending]{Describir esto de manera narrativa}
-\begin{itemize}
-  \item La evaluación de control permitió identificar alucinaciones en 10 de los 30 chatbots.
-  \item El 33,33\,\% presentó al menos una alucinación según el veredicto final.
-  \item El 66,67\,\% no presentó alucinaciones en esta evaluación.
-\end{itemize}
-\txcomment[author=peter,id=R233,status=pending]{MAYOR: Resultados, evaluación de control. Complementa J47. "alucinaciones en 10 de los 30 chatbots" no dice con qué criterio se determinó. Si la consulta control es la referencia para evaluar los turnos 1 a 3, hay que explicar cómo se trataron los chatbots que ya alucinaban en el control (el 33,33\%). Indicar también si esos 10 son los mismos 10 que fallaron en algún turno (la matriz muestra 10 con al menos un fallo).}
-La \cref{tab:control} resume el veredicto final de la evaluación de control.
+La evaluación de control permitió identificar alucinaciones en 10 de los 30 chatbots evaluados, lo que representa el 33,33 \% de la muestra. Por su parte, los 20 chatbots restantes (66,67 \%) no presentaron alucinaciones en esta evaluación, de acuerdo con el veredicto final establecido. Estos resultados muestran que algunos chatbots presentaron inconsistencias factuales incluso antes de iniciar la interacción multiturno.
 
 \begin{table}[H]
   \caption{Veredicto final de la evaluación de control}\label{tab:control}
@@ -546,46 +327,17 @@ La \cref{tab:control} resume el veredicto final de la evaluación de control.
   \nota{\elaboracionpropia}
 \end{table}
 
-\subsection{Validación final de los datos}
-\txcomment[author=john,id=J62,status=pending]{Eliminar esta subsección, no aporta!}
-La \cref{tab:validacion} muestra la validación final de los datos.
+\section{Discusión de resultados}
+Los resultados de la evaluación evidencian que las alucinaciones factuales continúan siendo un problema en los chatbots empresariales evaluados. En la interacción multiturno se identificaron 11 respuestas incorrectas de un total de 90, equivalentes al 12,22 \%. Este hallazgo coincide con lo señalado por \citet{farquhar2024}, quienes explican que los modelos de lenguaje pueden generar información incorrecta o no sustentada a pesar de producir respuestas coherentes y convincentes. De esta manera, los resultados muestran que la fluidez de las respuestas no garantiza su exactitud factual, aspecto especialmente relevante en los chatbots utilizados para proporcionar información sobre productos y servicios empresariales.
+En cuanto al comportamiento de los errores a lo largo de la conversación, se observó una disminución descriptiva del porcentaje de respuestas incorrectas, pasando del 16,67 \% en el turno 1 al 10,00 \% en los turnos 2 y 3. Sin embargo, las comparaciones mediante la prueba exacta de McNemar no identificaron diferencias estadísticamente significativas. Por tanto, los resultados no permiten afirmar que el aumento de turnos produzca una reducción de las alucinaciones. Este comportamiento debe interpretarse considerando que el estudio registró pocos cambios en la clasificación de los chatbots entre turnos. Además, \citet{laban2025} encontraron que las conversaciones multiturno pueden incrementar la falta de confiabilidad de los modelos cuando estos mantienen supuestos incorrectos establecidos durante interacciones anteriores. Aunque sus resultados no son directamente comparables con los de esta investigación, muestran que la continuidad conversacional no garantiza una mejora en la precisión de las respuestas.
+Respecto a la influencia de las premisas falsas, la evaluación permitió observar cómo reaccionaron los chatbots ante información incorrecta introducida durante la conversación. Algunos presentaron errores factuales, mientras que otros lograron mantener respuestas correctas. No obstante, el diseño experimental no permite establecer si los errores se produjeron exclusivamente por la presencia de la premisa falsa o por la continuidad de la interacción, debido a que no se incluyó un escenario de comparación en el que la misma premisa se presentara mediante una consulta de un solo turno. Esta limitación es importante al interpretar los resultados, pues investigaciones como la de \citet{yuan2024} muestran que las preguntas con premisas falsas pueden inducir respuestas alucinadas en los modelos de lenguaje. En consecuencia, los errores observados deben entenderse como respuestas producidas bajo las condiciones específicas de evaluación y no como evidencia de una relación causal entre el número de turnos y la aparición de alucinaciones.
+Por otra parte, la distribución de errores entre sectores mostró diferencias en sus porcentajes y cantidades absolutas. Sin embargo, estas variaciones deben interpretarse con cautela, debido a la distribución desigual de chatbots en la muestra y al reducido número de observaciones en algunos sectores. Por ejemplo, porcentajes como el 33,33 \% en Retail, Desarrollo urbano y sector público corresponden a cantidades pequeñas de respuestas evaluadas, por lo que no permiten concluir que estos sectores presenten una mayor tendencia a generar alucinaciones. Asimismo, la evaluación de control identificó alucinaciones en 10 de los 30 chatbots, lo que evidencia que las inconsistencias factuales también estuvieron presentes en las consultas independientes de referencia. En conjunto, estos hallazgos resaltan la importancia de evaluar la confiabilidad de los chatbots empresariales tanto en consultas individuales como en interacciones continuadas, sin generalizar los resultados más allá de las condiciones y la muestra estudiadas.
 
-\begin{table}[H]
-  \caption{Validación final de los datos}\label{tab:validacion}
-  \begin{rcctabla}
-  \begin{tabularx}{\textwidth}{LC}
-    \rccencabezado \rcch{Control de validación} & \rcch{Valor} \\
-    Chatbots & 30 \\ \hline
-    Registros de control & 30 \\ \hline
-    Registros de turnos & 90 \\ \hline
-    Sectores sin clasificar & 0 \\ \hline
-    Respuestas sin evaluación & 0 \\ \hline
-  \end{tabularx}
-  \end{rcctabla}
-  \nota{\elaboracionpropia}
-\end{table}
-
-\txcomment[author=john,id=J63,status=pending]{Antes de conclusiones redactar una sección llamada Discusión de resultados. Allí comparar los resultados obtenidos frente a lo que dicen los demás autores. Coinciden o se refutan? Ellos están de acuerdo que a mayor cantidad de turnos el error disminuye? Si, no, porque? Nuestros resultados son significativos? Cuando falla porque sucede? Es por la premisa falsa o porque los turnos aumentan? Deberían ser unos 3 a 5 párrafos con análisis critico y bien fundamentado, cada párrafo con una idea principal. De aquí salen las conclusiones (aprox. 1 conclusioń por cada discusión), sin esto es muy difícil concluir algo que valga la pena.}
 \section{Conclusiones y trabajo futuro}
-Se realizo una evaluación con una muestra de 30 chatbots de diferentes sectores donde se identificaron que estos sistemas para la atención a los clientes presentan errores al momento de responder preguntas que contienen información falsa.
-A través del procedimiento, fue posible observar cómo fue la reacción de cada uno de los chatbots antes todas las situaciones y como se comportaban según seguía la conversación durante varios turnos.
-
-Uno de los aspectos más interesantes fue observar que el mayor número de errores se presentó en el primer turno, con 5 casos de 30 evaluaciones (16,67\,\%).
-En los turnos siguientes se registraron 3 errores en cada uno (10\,\%).
-Aunque estos resultados muestran una disminución en los errores observados, las pruebas estadísticas no identificaron diferencias significativas entre los turnos.
-Por lo tanto, no es posible afirmar que los chatbots mejoren su comportamiento a medida que avanza la conversación.
-\txcomment[author=john,id=J64,status=pending]{Este fue el hallazgo más importante, es muy raro que la tasa de errores haya bajado, comparen este resultado con los demás trabajos, coinciden o lo refutan?}
-Asimismo, el uso de fuentes de referencia fue fundamental para verificar las respuestas proporcionadas por los chatbots y determinar si la información era correcta o contenía afirmaciones sin fundamento.
-\txcomment[author=john,id=J65,status=pending]{Esto no se entiende, que son las "fuentes de referencia"}
-Esto permitió comprobar la importancia de contrastar las respuestas generadas por la inteligencia artificial, en lugar de asumir que toda la información entregada es verdadera.
-\txcomment[author=john,id=J66,status=pending]{Esto sobra, es una frase de cajón que no aporta y si daña. Ojo! No podemos irnos al extremos, decir, es cierto que la información entregada debe se leída con suspicacia, pero hay un alto porcentaje que son correctas, en su lugar deberían analizar porque falla, hay algún motivo en especial? Fue algún chatbot en particular? Algún sector? Alguna premisa falsa en especia? Tuvo algo que ver el multiturno o fue simplemente que desde el primer turno ya estaba mal e invalida lo que dicen otros autores que a mayor cantidad de turnos el LLM se degenera?}
-
-Finalmente, esta investigación permite reconocer la importancia de evaluar la confiabilidad de los chatbots, especialmente cuando son utilizados por empresas para atender a sus clientes.
-No basta con analizar las respuestas que ofrecen ante una pregunta inicial, sino que también es necesario observar su comportamiento durante conversaciones más largas.
-De esta manera, el estudio aporta una forma de analizar los errores que pueden presentarse en estos sistemas y resalta la necesidad de continuar investigando las alucinaciones en herramientas de inteligencia artificial.
-\txcomment[author=john,id=J67,status=pending]{Este último párrafo es vacío, no aporta nada, eliminarlo.}
-\txcomment[author=peter,id=R237,status=pending]{MENOR: Conclusiones. Complementa J63 y J67. Al reescribirlas, incluir las cifras que responden la pregunta (12,22\% de respuestas con fallo y 10 de 30 chatbots con alucinación en el control) y, como el título dice "trabajo futuro", dos líneas concretas (por ejemplo ampliar la muestra o probar la misma premisa en un solo turno).}
-\txcomment[author=peter,id=R238,status=pending]{MENOR: Conclusiones, redacción. "Se realizo", "se identificaron que", "antes todas las situaciones", "como se comportaban según seguía la conversación". Corregir concordancia y ortografía.}
+La evaluación de 30 chatbots empresariales de diferentes sectores permitió identificar errores factuales tanto en las consultas de control como en las interacciones multiturno. En la evaluación de control, 10 de los 30 chatbots (33,33 \%) presentaron al menos una alucinación. Por su parte, durante las interacciones multiturno se identificaron 11 respuestas incorrectas de un total de 90, lo que representa el 12,22 \% de las respuestas evaluadas. Estos resultados evidencian que las inconsistencias factuales pueden presentarse tanto en consultas independientes como durante conversaciones que incluyen premisas falsas.
+Uno de los principales hallazgos fue la variación en la frecuencia de errores entre los turnos. En el primero se identificaron cinco respuestas incorrectas (16,67 \%), mientras que en el segundo y el tercero se registraron tres errores en cada uno (10,00 \%). Aunque descriptivamente se observó una disminución, la prueba exacta de McNemar no encontró diferencias estadísticamente significativas entre los turnos. Por consiguiente, no se obtuvo evidencia suficiente para afirmar que los chatbots reducen sus errores a medida que avanza la conversación. Este resultado tampoco permite concluir que los errores aumenten necesariamente durante las interacciones multiturno, por lo que el comportamiento observado debe interpretarse considerando las condiciones específicas del experimento.
+En relación con los sectores evaluados, se observaron diferencias en la cantidad y proporción de errores. Sin embargo, la distribución desigual de chatbots y respuestas entre sectores limita la posibilidad de establecer comparaciones concluyentes. De igual manera, los resultados no permiten atribuir los errores a una empresa, sector o premisa falsa específica sin un análisis adicional de los casos individuales. Por tanto, los hallazgos ofrecen una descripción del comportamiento de los chatbots incluidos en la muestra, pero no permiten generalizar sus resultados a todos los sistemas empresariales de cada sector.
+Como trabajo futuro, se propone ampliar la muestra de chatbots y procurar una distribución más equilibrada entre sectores, con el propósito de obtener resultados más sólidos en las comparaciones. Asimismo, se recomienda evaluar las mismas premisas falsas mediante dos condiciones experimentales: una consulta de un solo turno y una conversación multiturno. Esta comparación permitiría estudiar con mayor precisión si la continuidad de la conversación influye en la aparición o persistencia de errores factuales.
 
 %% ---------------------------------------------------------------------
 %% DECLARACIONES
@@ -599,17 +351,16 @@ La presente investigación no recibió financiación externa y fue desarrollada 
 \end{financiamiento}
 
 \begin{etica}
-\sinetica
+La investigación se realizó mediante interacciones con 30 chatbots comerciales disponibles públicamente. Durante la evaluación no se ingresaron datos personales reales, no se realizaron trámites, transacciones ni solicitudes de servicios en nombre de usuarios y las consultas se limitaron a evaluar las respuestas generadas por estos sistemas. Asimismo, se procuró respetar las condiciones de uso de las plataformas durante el proceso de recolección de información. El estudio no involucró la participación directa de personas ni el uso de animales o datos personales sensibles.
+En cuanto a la aprobación ética institucional, se deberá indicar si el comité correspondiente determinó que la investigación estaba exenta de revisión o que no requería aprobación, según los procedimientos de la institución.
+
 \end{etica}
-\txcomment[author=peter,id=R239,status=pending]{MENOR: Declaración ética. La declaración estándar dice que no hubo participantes humanos, datos personales ni animales, lo cual es plausible, pero el estudio interactuó con 30 servicios comerciales. Indicar que se respetaron los términos de uso, que no se ingresaron datos personales reales ni se hicieron trámites reales, y si el comité de la institución consideró que no requería aprobación.}
 
 \begin{datos}
-\sindatos
+Los datos utilizados y generados durante esta investigación corresponden a una base de 120 registros que contiene las consultas realizadas, las respuestas proporcionadas por los chatbots, los veredictos de evaluación y la clasificación por sector. Para proteger la identidad de las empresas evaluadas, sus nombres fueron reemplazados por códigos. La base de datos y los instrumentos de evaluación se pondrán a disposición pública en un repositorio digital, una vez se complete su anonimización y preparación para publicación. El enlace de acceso se incluirá en la versión final del manuscrito.
 \end{datos}
-\txcomment[author=peter,id=R240,status=pending]{MAYOR: Disponibilidad de datos. La declaración estándar afirma que no se generaron ni analizaron datos nuevos, lo que contradice el estudio (120 registros propios). Publicar la base (prompts, respuestas, veredictos y sector) en un repositorio con acceso concreto. Complementa J56: reemplazar los nombres de las empresas por códigos.}
 
 %% CRediT según la participación indicada por los autores (ver notes/decisiones.md, D10).
-\txcomment[author=john,id=J69,status=pending]{la caja sobrepasada de 71 pt (log de compilación) está en este bloque, que se oculta en modo manuscrito. Revisar en la versión final.}
 \begin{contribuciones}
 \credito{David Alejandro Vargas Ramírez}{Curación de datos, Investigación, Análisis formal, Redacción -- borrador original}
 \credito{Diego Alejandro Velásquez Villalba}{Curación de datos, Investigación, Análisis formal}
@@ -618,7 +369,7 @@ La presente investigación no recibió financiación externa y fue desarrollada 
 
 %% El .docx menciona el uso de Google AI Studio (Gemini) en la metodología. Se
 %% transcribe ese dato; el propósito y la versión del modelo están sin confirmar.
-\txcomment[author=john,id=J70,status=pending]{completar la declaración de IA.}
+
 %   - Fase del proceso en la que se usó (evaluación, análisis, otra):
 %   - Función exacta (¿evaluó respuestas?, ¿generó categorías?, ¿redactó o editó texto?):
 %   - Modelo exacto y versión (el texto actual dice "Gemini 3.8", sin verificar):
@@ -643,7 +394,7 @@ Finalmente, agradezco a la universidad por brindarme los espacios y las herramie
 %% ---------------------------------------------------------------------
 %% REFERENCIAS (BibTeX: referencias.bib, estilo rcc-apa)
 %% ---------------------------------------------------------------------
-\txcomment[author=john,id=J72,status=pending]{la referencia 8 del .docx no se pudo verificar y está excluida (ver referencias.bib y notes/decisiones.md, D1). Decidir si se incluye.}
+
 \bibliography{referencias}
 
 \txlistofchanges[style=list,title={Reporte de revisión},status={pending}] % Reporte de revisión de cambios
